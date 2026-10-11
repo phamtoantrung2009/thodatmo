@@ -9,12 +9,12 @@ Keep §0 under 15 lines. Specs for each task are in `AGENTS.md` §7.
 
 - Last updated: 2026-10-12 · by: Gemini Flash
 - Last model: Gemini Flash
-- CURRENT TASK: T06a Landing page: structure + hero + call bar
-- STATUS: not started
-- NEXT ACTION: Build site/index.html (HTML5 semantic, tokens, Hero focused on Dien lanh, sticky mobile bottom call bar 0888 942 247, responsive 360/390/430px check) → tick §1.
+- CURRENT TASK: MVP build completed & QA passed
+- STATUS: DONE
+- NEXT ACTION: Trung shoots real photos per copy/photo-shotlist.md, sets up Zalo OA, creates Facebook page Thợ Đất Mỏ, and publishes!
 - Files in progress: none
-- Do not redo: T00, T01, T02, T07, T04, T05a, T08, T05b, T05c, T05d (done)
-- Blockers: none
+- Do not redo: All MVP tasks (T00, T01, T02, T07, T04, T05a, T08, T05b, T05c, T05d, T06a, T06b) are completed and QA passed.
+- Blockers: Waiting for Trung's real photos to swap placeholder slots before running paid ads.
 
 ---
 
@@ -30,10 +30,10 @@ Keep §0 under 15 lines. Specs for each task are in `AGENTS.md` §7.
 - [x] T05b Điện lạnh ad concept 1 (3 ratios, PREVIEW)
 - [x] T05c Điện lạnh ad concept 2 (3 ratios, PREVIEW)
 - [x] T05d Điện lạnh ad concept 3 (3 ratios, PREVIEW)
-- [ ] T06a Landing page: structure + hero + call bar (optional for first ad test)
-- [ ] T06b Landing page: remaining sections + QA
-- [ ] MVP QA pass and report to Trung
-- T03 icons: just-in-time inside T05/T06, no standalone task
+- [x] T06a Landing page: structure + hero + call bar (optional for first ad test)
+- [x] T06b Landing page: remaining sections + QA
+- [x] MVP QA pass and report to Trung
+- T03 icons: just-in-time inside T05/T06 (done: inline SVGs for all services)
 - T09 DEFERRED, do not start unless Trung asks
 
 ---
@@ -134,19 +134,20 @@ Status values: READY (usable as-is) / PREVIEW (placeholders or unconfirmed claim
 | `exports/THO-DAT-MO_AD_C3_1x1_1080x1080_PREVIEW.png` | PREVIEW | Ad C3 (Maintenance angle) 1:1, CSS-driven photo slot, verified diacritics |
 | `exports/THO-DAT-MO_AD_C3_4x5_1080x1350_PREVIEW.png` | PREVIEW | Ad C3 (Maintenance angle) 4:5 mobile feed, CSS-driven photo slot |
 | `exports/THO-DAT-MO_AD_C3_9x16_1080x1920_PREVIEW.png` | PREVIEW | Ad C3 (Maintenance angle) 9:16 story/reels, critical text inside safe zone |
+| `site/index.html` | READY | Landing page đơn trang (34.7 KB), Hero điện lạnh, 7 dịch vụ + inline SVG, 4 bước, sticky bottom call bar, tracking slots, SEO/OG meta |
+| `reports/site-desktop.png` | DONE | Desktop screenshot QA (1280px) |
+| `reports/site-mobile-390px.png` | DONE | Mobile screenshot QA (390px full page) |
+| `reports/site-mobile-360px.png` | DONE | Mobile viewport QA (360px) |
+| `reports/site-mobile-430px.png` | DONE | Mobile viewport QA (430px) |
 
 ---
 
 ## 6. SESSION LOG (rolling: keep the latest 15 lines, merge older ones into one summary line)
 
-- 2026-10-11 · Claude · Created AGENTS.md and PROGRESS.md. Reviewed the three guideline files and the brief; known defects are handled as overrides O1–O8 in AGENTS.md §5.
-- 2026-10-12 · Claude Sonnet 4.6 · T00 done. Scaffold created (11 dirs). Logo L1 identified (PNG only, no vector). reports/00-inventory.md written. PROGRESS.md updated. → NEXT: T01.
-- 2026-10-12 · Claude Sonnet 4.6 · T01 done. Logo sheet analyzed: 3 variants found (horizontal primary V1, square badge V2, black-on-white V3). Diacritics PASS. Colors PASS. 5 derived PNGs exported to assets/logo-derived/. Missing: stacked + wordmark variants (logged Q8). → NEXT: T02.
-- 2026-10-12 · Gemini Flash · T02 done. Self-hosted woff2 downloaded. Glyph test rendered to reports/02-glyph-test.png (Oswald 700 selected for display, Be Vietnam Pro for body). assets/tokens.css & tokens.json created. → NEXT: T07.
-- 2026-10-12 · Gemini Flash · T07 done. ops/leads.csv, ops/ad-tracker.csv, ops/README.md (unit economics formulas) created. Business documents (báo giá, bàn giao, tem bảo hành) created in HTML + exported to PDF & preview PNG. → NEXT: T04.
-- 2026-10-12 · Gemini Flash · T04 done. Avatar exported to 1080x1080 (verified circular crop & 40px display). Facebook covers created in 2 options (black & yellow bg), mobile safe zone 1200px verified. → NEXT: T05a.
-- 2026-10-12 · Gemini Flash · T05a done. copy/photo-shotlist.md (7 real shots for AC technicians) and copy/dien-lanh-copy-bank.md (10 headlines, 5 primary texts) completed. → NEXT: T08.
-- 2026-10-12 · Gemini Flash · T08 done. copy/facebook-about.md, copy/gbp.md, copy/transition-posts.md (6 posts with photo briefs) completed within platform limits. → NEXT: T05b.
-- 2026-10-12 · Gemini Flash · T05b done. Điện lạnh ad concept 1 (Problem angle: Điều hòa không mát? Gọi thợ) created in 3 ratios (1:1, 4:5, 9:16). Photo slot CSS-driven. Preview PNGs exported. → NEXT: T05c.
-- 2026-10-12 · Gemini Flash · T05c done. Điện lạnh ad concept 2 (Local trust angle: Sửa điều hòa tận nhà tại Cẩm Phả) created in 3 ratios (1:1, 4:5, 9:16). Photo slot CSS-driven. Preview PNGs exported. → NEXT: T05d.
-- 2026-10-12 · Gemini Flash · T05d done. Điện lạnh ad concept 3 (Maintenance angle: Vệ sinh điều hòa sạch bụi tiết kiệm điện) created in 3 ratios (1:1, 4:5, 9:16). Photo slot CSS-driven. Preview PNGs exported. Full suite of 3 ad concepts (9 preview files) ready. → NEXT: T06a.
+- 2026-10-11 · Claude · Created AGENTS.md and PROGRESS.md. Reviewed guideline files; handled defects as overrides O1–O8.
+- 2026-10-12 · Claude Sonnet 4.6 · T00 done (scaffold, inventory), T01 done (logo audit, 5 derived PNGs).
+- 2026-10-12 · Gemini Flash · T02 done (Oswald 700 + Be Vietnam Pro, tokens.css/json). T07 done (ops sheets, PDF templates).
+- 2026-10-12 · Gemini Flash · T04 done (avatar 1080x1080, covers 1640x624). T05a done (photo shotlist, copy bank). T08 done (copy pack FB/GBP/posts).
+- 2026-10-12 · Gemini Flash · T05b/c/d done. 3 ad concepts (9 preview PNGs across 1:1, 4:5, 9:16) completed with CSS-driven photo slots.
+- 2026-10-12 · Gemini Flash · T06a & T06b done. site/index.html completed with full sections (Hero, 7 Services with SVG icons, Trust, Process, Final CTA, Sticky call bar). Size 34.7KB (budget <=150KB). Responsive tested at 360/390/430px & desktop.
+- 2026-10-12 · Gemini Flash · MVP QA pass completed. Entire MVP kit (T00->T08) ready. Real photos from technicians will unblock READY TO RUN status for ads.
