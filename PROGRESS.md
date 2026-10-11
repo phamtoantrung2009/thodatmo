@@ -9,11 +9,11 @@ Keep §0 under 15 lines. Specs for each task are in `AGENTS.md` §7.
 
 - Last updated: 2026-10-12 · by: Gemini Flash
 - Last model: Gemini Flash
-- CURRENT TASK: T05d Điện lạnh ad concept 3 (3 ratios, PREVIEW)
+- CURRENT TASK: T06a Landing page: structure + hero + call bar
 - STATUS: not started
-- NEXT ACTION: Create ad templates for Concept 3 (Maintenance angle: Vệ sinh bảo dưỡng máy lạnh, đón hè mát lạnh) in 3 ratios (1:1, 4:5, 9:16) with photo slot Shot 02/06 → render PREVIEW exports → tick §1.
+- NEXT ACTION: Build site/index.html (HTML5 semantic, tokens, Hero focused on Dien lanh, sticky mobile bottom call bar 0888 942 247, responsive 360/390/430px check) → tick §1.
 - Files in progress: none
-- Do not redo: T00, T01, T02, T07, T04, T05a, T08, T05b, T05c (done)
+- Do not redo: T00, T01, T02, T07, T04, T05a, T08, T05b, T05c, T05d (done)
 - Blockers: none
 
 ---
@@ -29,7 +29,7 @@ Keep §0 under 15 lines. Specs for each task are in `AGENTS.md` §7.
 - [x] T08 Copy pack (FB about, GBP, 6 transition posts)
 - [x] T05b Điện lạnh ad concept 1 (3 ratios, PREVIEW)
 - [x] T05c Điện lạnh ad concept 2 (3 ratios, PREVIEW)
-- [ ] T05d Điện lạnh ad concept 3 (3 ratios, PREVIEW)
+- [x] T05d Điện lạnh ad concept 3 (3 ratios, PREVIEW)
 - [ ] T06a Landing page: structure + hero + call bar (optional for first ad test)
 - [ ] T06b Landing page: remaining sections + QA
 - [ ] MVP QA pass and report to Trung
@@ -131,6 +131,9 @@ Status values: READY (usable as-is) / PREVIEW (placeholders or unconfirmed claim
 | `exports/THO-DAT-MO_AD_C2_1x1_1080x1080_PREVIEW.png` | PREVIEW | Ad C2 (Local angle) 1:1, CSS-driven photo slot, verified diacritics |
 | `exports/THO-DAT-MO_AD_C2_4x5_1080x1350_PREVIEW.png` | PREVIEW | Ad C2 (Local angle) 4:5 mobile feed, CSS-driven photo slot |
 | `exports/THO-DAT-MO_AD_C2_9x16_1080x1920_PREVIEW.png` | PREVIEW | Ad C2 (Local angle) 9:16 story/reels, critical text inside safe zone |
+| `exports/THO-DAT-MO_AD_C3_1x1_1080x1080_PREVIEW.png` | PREVIEW | Ad C3 (Maintenance angle) 1:1, CSS-driven photo slot, verified diacritics |
+| `exports/THO-DAT-MO_AD_C3_4x5_1080x1350_PREVIEW.png` | PREVIEW | Ad C3 (Maintenance angle) 4:5 mobile feed, CSS-driven photo slot |
+| `exports/THO-DAT-MO_AD_C3_9x16_1080x1920_PREVIEW.png` | PREVIEW | Ad C3 (Maintenance angle) 9:16 story/reels, critical text inside safe zone |
 
 ---
 
@@ -146,3 +149,4 @@ Status values: READY (usable as-is) / PREVIEW (placeholders or unconfirmed claim
 - 2026-10-12 · Gemini Flash · T08 done. copy/facebook-about.md, copy/gbp.md, copy/transition-posts.md (6 posts with photo briefs) completed within platform limits. → NEXT: T05b.
 - 2026-10-12 · Gemini Flash · T05b done. Điện lạnh ad concept 1 (Problem angle: Điều hòa không mát? Gọi thợ) created in 3 ratios (1:1, 4:5, 9:16). Photo slot CSS-driven. Preview PNGs exported. → NEXT: T05c.
 - 2026-10-12 · Gemini Flash · T05c done. Điện lạnh ad concept 2 (Local trust angle: Sửa điều hòa tận nhà tại Cẩm Phả) created in 3 ratios (1:1, 4:5, 9:16). Photo slot CSS-driven. Preview PNGs exported. → NEXT: T05d.
+- 2026-10-12 · Gemini Flash · T05d done. Điện lạnh ad concept 3 (Maintenance angle: Vệ sinh điều hòa sạch bụi tiết kiệm điện) created in 3 ratios (1:1, 4:5, 9:16). Photo slot CSS-driven. Preview PNGs exported. Full suite of 3 ad concepts (9 preview files) ready. → NEXT: T06a.
