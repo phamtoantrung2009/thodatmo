@@ -9,11 +9,11 @@ Keep §0 under 15 lines. Specs for each task are in `AGENTS.md` §7.
 
 - Last updated: 2026-10-12 · by: Gemini Flash
 - Last model: Gemini Flash
-- CURRENT TASK: T05b Điện lạnh ad concept 1 (3 ratios, PREVIEW)
+- CURRENT TASK: T05c Điện lạnh ad concept 2 (3 ratios, PREVIEW)
 - STATUS: not started
-- NEXT ACTION: Create ad templates for Concept 1 in 3 ratios (1:1 1080x1080, 4:5 1080x1350, 9:16 1080x1920) with photo placeholders and render PREVIEW exports → tick §1.
+- NEXT ACTION: Create ad templates for Concept 2 (Local / Trust angle: Thợ Cẩm Phả tới tận nơi, báo giá rõ ràng) in 3 ratios (1:1, 4:5, 9:16) with photo slot Shot 03/07 → render PREVIEW exports → tick §1.
 - Files in progress: none
-- Do not redo: T00, T01, T02, T07, T04, T05a, T08 (done)
+- Do not redo: T00, T01, T02, T07, T04, T05a, T08, T05b (done)
 - Blockers: none
 
 ---
@@ -27,7 +27,7 @@ Keep §0 under 15 lines. Specs for each task are in `AGENTS.md` §7.
 - [x] T04 Facebook avatar and cover
 - [x] T05a Điện lạnh copy bank + photo shotlist
 - [x] T08 Copy pack (FB about, GBP, 6 transition posts)
-- [ ] T05b Điện lạnh ad concept 1 (3 ratios, PREVIEW)
+- [x] T05b Điện lạnh ad concept 1 (3 ratios, PREVIEW)
 - [ ] T05c Điện lạnh ad concept 2 (3 ratios, PREVIEW)
 - [ ] T05d Điện lạnh ad concept 3 (3 ratios, PREVIEW)
 - [ ] T06a Landing page: structure + hero + call bar (optional for first ad test)
@@ -125,6 +125,9 @@ Status values: READY (usable as-is) / PREVIEW (placeholders or unconfirmed claim
 | `copy/facebook-about.md` | READY | Facebook page setup, bio (152 chars) and about copy |
 | `copy/gbp.md` | READY | Google Business Profile categories, description (588 chars), services list |
 | `copy/transition-posts.md` | READY | 6 transition posts with real photo briefs for page rebrand |
+| `exports/THO-DAT-MO_AD_C1_1x1_1080x1080_PREVIEW.png` | PREVIEW | Ad C1 (Problem angle) 1:1, CSS-driven photo slot, verified diacritics |
+| `exports/THO-DAT-MO_AD_C1_4x5_1080x1350_PREVIEW.png` | PREVIEW | Ad C1 (Problem angle) 4:5 mobile feed, CSS-driven photo slot |
+| `exports/THO-DAT-MO_AD_C1_9x16_1080x1920_PREVIEW.png` | PREVIEW | Ad C1 (Problem angle) 9:16 story/reels, critical text inside safe zone |
 
 ---
 
@@ -138,3 +141,4 @@ Status values: READY (usable as-is) / PREVIEW (placeholders or unconfirmed claim
 - 2026-10-12 · Gemini Flash · T04 done. Avatar exported to 1080x1080 (verified circular crop & 40px display). Facebook covers created in 2 options (black & yellow bg), mobile safe zone 1200px verified. → NEXT: T05a.
 - 2026-10-12 · Gemini Flash · T05a done. copy/photo-shotlist.md (7 real shots for AC technicians) and copy/dien-lanh-copy-bank.md (10 headlines, 5 primary texts) completed. → NEXT: T08.
 - 2026-10-12 · Gemini Flash · T08 done. copy/facebook-about.md, copy/gbp.md, copy/transition-posts.md (6 posts with photo briefs) completed within platform limits. → NEXT: T05b.
+- 2026-10-12 · Gemini Flash · T05b done. Điện lạnh ad concept 1 (Problem angle: Điều hòa không mát? Gọi thợ) created in 3 ratios (1:1, 4:5, 9:16). Photo slot CSS-driven. Preview PNGs exported. → NEXT: T05c.
