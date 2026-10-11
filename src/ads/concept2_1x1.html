@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Ad Concept 2 — 1:1 (1080x1080) — THỢ ĐẤT MỎ</title>
+  <link rel="stylesheet" href="../../assets/tokens.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      width: 1080px;
+      height: 1080px;
+      background-color: var(--tdm-color-black);
+      color: var(--tdm-color-white);
+      font-family: var(--tdm-font-body);
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 48px;
+    }
+    .bg-grid {
+      position: absolute;
+      inset: 0;
+      background-image: 
+        linear-gradient(rgba(255, 210, 0, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 210, 0, 0.04) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+    }
+    .preview-tag {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: #333333;
+      color: #AAAAAA;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 8px;
+      border-radius: 3px;
+      letter-spacing: 1px;
+      z-index: 10;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 2;
+    }
+    .logo-badge {
+      background: #FFFFFF;
+      padding: 8px 18px;
+      border-radius: var(--tdm-radius-sm);
+      border-left: 5px solid var(--tdm-color-yellow);
+      display: flex;
+      align-items: center;
+    }
+    .logo-img {
+      height: 48px;
+      width: auto;
+    }
+    .local-trust-pill {
+      background: var(--tdm-color-yellow);
+      color: var(--tdm-color-black);
+      font-family: var(--tdm-font-display);
+      font-size: 15px;
+      font-weight: 700;
+      padding: 8px 18px;
+      border-radius: var(--tdm-radius-sm);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      box-shadow: 0 4px 12px rgba(255, 210, 0, 0.25);
+    }
+
+    .hook-area {
+      margin-top: 24px;
+      margin-bottom: 20px;
+      z-index: 2;
+    }
+    .yellow-sub {
+      font-family: var(--tdm-font-display);
+      font-size: 18px;
+      color: var(--tdm-color-yellow);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .headline {
+      font-family: var(--tdm-font-display);
+      font-size: 54px;
+      line-height: 1.1;
+      text-transform: uppercase;
+      letter-spacing: -0.5px;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+    }
+    .headline span {
+      color: var(--tdm-color-yellow);
+    }
+    .sub-desc {
+      font-size: 18px;
+      color: #CCCCCC;
+      font-weight: 500;
+    }
+
+    /* Photo slot */
+    .photo-slot {
+      flex: 1;
+      width: 100%;
+      border-radius: var(--tdm-radius-md);
+      border: 2px solid #333333;
+      background-color: #1A1A1A;
+      background-image: url('../../assets/photos/dien-lanh_03_do-gas-cuc-nong.jpg');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 24px;
+      overflow: hidden;
+      z-index: 2;
+    }
+    .placeholder-content {
+      background: rgba(10, 10, 10, 0.88);
+      border: 1.5px dashed var(--tdm-color-yellow);
+      border-radius: var(--tdm-radius-sm);
+      padding: 24px 32px;
+      text-align: center;
+      color: #E0E0E0;
+    }
+    .placeholder-label {
+      font-family: var(--tdm-font-display);
+      font-size: 18px;
+      color: var(--tdm-color-yellow);
+      margin-bottom: 6px;
+      letter-spacing: 1px;
+    }
+    .placeholder-desc {
+      font-size: 14px;
+      color: #AAAAAA;
+    }
+
+    .value-props {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 24px;
+      z-index: 2;
+    }
+    .prop-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 15px;
+      font-weight: 700;
+      color: #E0E0E0;
+    }
+    .prop-bullet {
+      background: var(--tdm-color-yellow);
+      color: var(--tdm-color-black);
+      width: 22px;
+      height: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 3px;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .cta-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--tdm-color-yellow);
+      color: var(--tdm-color-black);
+      padding: 18px 28px;
+      border-radius: var(--tdm-radius-sm);
+      box-shadow: 0 6px 20px rgba(255, 210, 0, 0.25);
+      z-index: 2;
+    }
+    .cta-text {
+      font-family: var(--tdm-font-display);
+      font-size: 26px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .cta-hotline {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .cta-badge {
+      background: var(--tdm-color-black);
+      color: #FFFFFF;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 6px 12px;
+      border-radius: 3px;
+    }
+    .cta-number {
+      font-family: var(--tdm-font-display);
+      font-size: 38px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="preview-tag">PREVIEW DRAFT</div>
+
+  <div class="header">
+    <div class="logo-badge">
+      <img src="../../assets/logo-derived/THO-DAT-MO_LOGO_HORIZONTAL_transparent_v01.png" alt="THỢ ĐẤT MỎ" class="logo-img">
+    </div>
+    <div class="local-trust-pill">● CẨM PHẢ • QUẢNG NINH</div>
+  </div>
+
+  <div class="hook-area">
+    <div class="yellow-sub">ĐẦU MỐI KỸ THUẬT ĐỊA PHƯƠNG</div>
+    <div class="headline">SỬA ĐIỀU HÒA TẬN NHÀ <span>TẠI CẨM PHẢ</span></div>
+    <div class="sub-desc">Khảo sát đúng bệnh • Báo giá rõ ràng • Thợ làm có trách nhiệm</div>
+  </div>
+
+  <div class="photo-slot">
+    <div class="placeholder-content">
+      <div class="placeholder-label">ẢNH THẬT: KIỂM TRA ÁP SUẤT GAS CỤC NÓNG</div>
+      <div class="placeholder-desc">dien-lanh_03_do-gas-cuc-nong.jpg (Xem copy/photo-shotlist.md Shot 03)</div>
+    </div>
+  </div>
+
+  <div class="value-props">
+    <div class="prop-item"><span class="prop-bullet">✓</span> Thợ các phường Cẩm Phả</div>
+    <div class="prop-item"><span class="prop-bullet">✓</span> Báo giá trước khi làm</div>
+    <div class="prop-item"><span class="prop-bullet">✓</span> Dán tem bảo hành cẩn thận</div>
+  </div>
+
+  <div class="cta-bar">
+    <div class="cta-text">CẦN THỢ? GỌI THỢ ĐẤT MỎ</div>
+    <div class="cta-hotline">
+      <span class="cta-badge">GỌI NGAY</span>
+      <span class="cta-number">0888 942 247</span>
+    </div>
+  </div>
+</body>
+</html>
