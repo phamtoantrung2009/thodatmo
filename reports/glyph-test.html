@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Glyph Test — THỢ ĐẤT MỎ</title>
+  <link rel="stylesheet" href="../assets/fonts/fonts.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #080808;
+      color: #FFFFFF;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      padding: 40px;
+    }
+    h1 {
+      font-size: 28px;
+      color: #FFD200;
+      margin-bottom: 24px;
+      border-bottom: 2px solid #FFD200;
+      padding-bottom: 12px;
+    }
+    .test-card {
+      background: #141414;
+      border: 1px solid #333333;
+      border-radius: 8px;
+      padding: 24px;
+      margin-bottom: 28px;
+    }
+    .font-name {
+      font-size: 14px;
+      color: #FFD200;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+    .test-headline {
+      font-size: 40px;
+      line-height: 1.2;
+      margin-bottom: 12px;
+      letter-spacing: -0.5px;
+    }
+    .test-diacritics {
+      font-size: 24px;
+      line-height: 1.4;
+      color: #E0E0E0;
+      margin-bottom: 12px;
+      word-break: break-all;
+    }
+    .test-numbers {
+      font-size: 24px;
+      color: #FFD200;
+      font-weight: 700;
+    }
+    .anton {
+      font-family: 'Anton', sans-serif;
+    }
+    .oswald {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+    }
+    .be-vietnam-bold {
+      font-family: 'Be Vietnam Pro', sans-serif;
+      font-weight: 700;
+    }
+    .be-vietnam-regular {
+      font-family: 'Be Vietnam Pro', sans-serif;
+      font-weight: 400;
+    }
+  </style>
+</head>
+<body>
+  <h1>T02 — VIETNAMESE GLYPH TEST BENCH</h1>
+
+  <div class="test-card">
+    <div class="font-name">Candidate 1: Anton (Regular 400 — Ultra-condensed display)</div>
+    <div class="test-headline anton">THỢ ĐẤT MỎ — VIỆC KỸ THUẬT, CÓ THỢ ĐẤT MỎ</div>
+    <div class="test-diacritics anton">ẮẰẲẴẶ ỆỀỂỄ ỌỘỒỔỖ ƯỨỪỬỮỰ ĐỊA PHƯƠNG ĐIỆN NƯỚC ĐIỀU HÒA</div>
+    <div class="test-numbers anton">HOTLINE: 0888 942 247</div>
+  </div>
+
+  <div class="test-card">
+    <div class="font-name">Candidate 2: Oswald (Bold 700 — Condensed display)</div>
+    <div class="test-headline oswald">THỢ ĐẤT MỎ — VIỆC KỸ THUẬT, CÓ THỢ ĐẤT MỎ</div>
+    <div class="test-diacritics oswald">ẮẰẲẴẶ ỆỀỂỄ ỌỘỒỔỖ ƯỨỪỬỮỰ ĐỊA PHƯƠNG ĐIỆN NƯỚC ĐIỀU HÒA</div>
+    <div class="test-numbers oswald">HOTLINE: 0888 942 247</div>
+  </div>
+
+  <div class="test-card">
+    <div class="font-name">Baseline Body: Be Vietnam Pro (Bold 700 & Regular 400)</div>
+    <div class="test-headline be-vietnam-bold">THỢ ĐẤT MỎ — VIỆC KỸ THUẬT, CÓ THỢ ĐẤT MỎ</div>
+    <div class="test-diacritics be-vietnam-regular">ẮẰẲẴẶ ỆỀỂỄ ỌỘỒỔỖ ƯỨỪỬỮỰ ĐỊA PHƯƠNG ĐIỆN NƯỚC ĐIỀU HÒA — Hotline 0888 942 247</div>
+  </div>
+</body>
+</html>

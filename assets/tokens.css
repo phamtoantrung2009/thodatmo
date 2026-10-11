@@ -1,0 +1,100 @@
+/* THỢ ĐẤT MỎ — DESIGN TOKENS (CSS)
+ * Version: 1.0 (Production)
+ * Spec: THO-DAT-MO_DESIGN_SYSTEM_v1.0.md §2–§6 + AGENTS.md Override O1
+ */
+
+@import url('./fonts/fonts.css');
+
+:root {
+  /* ------------------------------------------------------------------------
+   * 1. CORE COLOR PALETTE (Strict: Yellow + Black + White + Gray)
+   * ------------------------------------------------------------------------ */
+  --tdm-color-yellow: #FFD200;
+  --tdm-color-black: #080808;
+  --tdm-color-white: #FFFFFF;
+  --tdm-color-gray: #6B6B6B;
+
+  /* Semantic surface & background */
+  --tdm-bg-primary: #080808;
+  --tdm-bg-surface-dark: #141414;
+  --tdm-bg-surface-elevated: #1F1F1F;
+  --tdm-bg-secondary: #FFFFFF;
+  --tdm-bg-accent: #FFD200;
+
+  /* Semantic typography colors */
+  --tdm-text-on-dark: #FFFFFF;
+  --tdm-text-on-light: #080808;
+  --tdm-text-on-accent: #080808;
+  --tdm-text-secondary: #6B6B6B;
+  --tdm-text-muted: #9E9E9E;
+
+  /* CTA tokens */
+  --tdm-cta-bg: #FFD200;
+  --tdm-cta-text: #080808;
+  --tdm-cta-hover: #E5BD00;
+
+  /* Borders & dividing lines */
+  --tdm-border-subtle: #292929;
+  --tdm-border-strong: #444444;
+  --tdm-border-accent: #FFD200;
+
+  /* ------------------------------------------------------------------------
+   * 2. TYPOGRAPHY TOKENS
+   * Display: Oswald (Bold 700) / fallback Anton
+   * Body: Be Vietnam Pro (400, 700)
+   * ------------------------------------------------------------------------ */
+  --tdm-font-display: 'Oswald', 'Anton', sans-serif;
+  --tdm-font-body: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  /* Type Scale */
+  --tdm-text-display-xl: 3.5rem;    /* 56px */
+  --tdm-text-display-l: 2.5rem;     /* 40px */
+  --tdm-text-display-m: 2rem;       /* 32px */
+  --tdm-text-display-s: 1.5rem;     /* 24px */
+  --tdm-text-body-l: 1.125rem;      /* 18px */
+  --tdm-text-body-m: 1rem;          /* 16px */
+  --tdm-text-body-s: 0.875rem;      /* 14px */
+  --tdm-text-body-xs: 0.75rem;      /* 12px */
+
+  /* Line Heights */
+  --tdm-leading-tight: 1.1;
+  --tdm-leading-snug: 1.25;
+  --tdm-leading-normal: 1.5;
+  --tdm-leading-relaxed: 1.625;
+
+  /* ------------------------------------------------------------------------
+   * 3. SPACING SYSTEM (Base unit: 8px)
+   * ------------------------------------------------------------------------ */
+  --tdm-space-1: 4px;
+  --tdm-space-2: 8px;
+  --tdm-space-3: 12px;
+  --tdm-space-4: 16px;
+  --tdm-space-5: 24px;
+  --tdm-space-6: 32px;
+  --tdm-space-7: 40px;
+  --tdm-space-8: 48px;
+  --tdm-space-10: 64px;
+  --tdm-space-12: 80px;
+  --tdm-space-14: 96px;
+  --tdm-space-16: 128px;
+
+  /* ------------------------------------------------------------------------
+   * 4. CORNER & SHAPE LANGUAGE
+   * Bold geometric blocks, controlled subtle rounding on yellow blocks.
+   * No heavy pills, no blobs.
+   * ------------------------------------------------------------------------ */
+  --tdm-radius-none: 0px;
+  --tdm-radius-sm: 4px;
+  --tdm-radius-md: 8px;
+  --tdm-radius-lg: 12px;
+  --tdm-radius-xl: 16px;
+
+  /* ------------------------------------------------------------------------
+   * 5. SHADOW / MINIMAL DEPTH
+   * Industrial flat preference, subtle depth only when needed.
+   * ------------------------------------------------------------------------ */
+  --tdm-shadow-none: none;
+  --tdm-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --tdm-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --tdm-shadow-accent: 0 4px 14px rgba(255, 210, 0, 0.18);
+}
