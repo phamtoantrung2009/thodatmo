@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Phiếu Bàn Giao & Nghiệm Thu — THỢ ĐẤT MỎ</title>
+  <link rel="stylesheet" href="../../assets/tokens.css">
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 15mm;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: var(--tdm-font-body);
+      color: #1A1A1A;
+      background: #FFFFFF;
+      padding: 20mm;
+      max-width: 210mm;
+      margin: 0 auto;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 3px solid var(--tdm-color-yellow);
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+    }
+    .brand-logo {
+      font-family: var(--tdm-font-display);
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--tdm-color-black);
+      text-transform: uppercase;
+      letter-spacing: -0.5px;
+      line-height: 1;
+    }
+    .brand-badge {
+      display: inline-block;
+      background: var(--tdm-color-yellow);
+      color: var(--tdm-color-black);
+      padding: 4px 10px;
+      border-radius: var(--tdm-radius-sm);
+      margin-right: 6px;
+    }
+    .brand-desc {
+      font-size: 11px;
+      color: var(--tdm-color-gray);
+      margin-top: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      font-weight: 700;
+    }
+    .doc-meta {
+      text-align: right;
+      font-size: 12px;
+      color: #444444;
+      line-height: 1.5;
+    }
+    .doc-meta strong {
+      color: var(--tdm-color-black);
+    }
+    .doc-title {
+      font-family: var(--tdm-font-display);
+      font-size: 26px;
+      text-transform: uppercase;
+      color: var(--tdm-color-black);
+      margin-bottom: 20px;
+      letter-spacing: 0.5px;
+    }
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      background: #F9F9F9;
+      border: 1px solid #E5E5E5;
+      border-radius: var(--tdm-radius-sm);
+      padding: 16px;
+      margin-bottom: 24px;
+      font-size: 13px;
+    }
+    .info-row {
+      display: flex;
+      margin-bottom: 6px;
+    }
+    .info-label {
+      width: 110px;
+      color: var(--tdm-color-gray);
+      font-weight: 700;
+    }
+    .info-value {
+      flex: 1;
+      color: var(--tdm-color-black);
+      border-bottom: 1px dotted #CCCCCC;
+      padding-bottom: 2px;
+    }
+    .section-title {
+      font-family: var(--tdm-font-display);
+      font-size: 16px;
+      text-transform: uppercase;
+      color: var(--tdm-color-black);
+      margin-bottom: 12px;
+      border-left: 4px solid var(--tdm-color-yellow);
+      padding-left: 8px;
+    }
+    .task-list {
+      border: 1px solid #E5E5E5;
+      border-radius: var(--tdm-radius-sm);
+      padding: 16px;
+      margin-bottom: 24px;
+      font-size: 13px;
+      background: #FAFAFA;
+    }
+    .task-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .checkbox {
+      width: 16px;
+      height: 16px;
+      border: 2px solid var(--tdm-color-black);
+      border-radius: 2px;
+      margin-right: 10px;
+      display: inline-block;
+    }
+    .warranty-card {
+      background: #FFFDE6;
+      border: 2px solid var(--tdm-color-yellow);
+      border-radius: var(--tdm-radius-sm);
+      padding: 16px;
+      margin-bottom: 30px;
+      font-size: 13px;
+    }
+    .warranty-title {
+      font-family: var(--tdm-font-display);
+      font-size: 16px;
+      color: var(--tdm-color-black);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .signatures {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      font-size: 13px;
+      margin-top: 20px;
+    }
+    .sig-col {
+      width: 220px;
+    }
+    .sig-space {
+      height: 70px;
+    }
+    .footer {
+      margin-top: 40px;
+      border-top: 1px solid #E5E5E5;
+      padding-top: 12px;
+      font-size: 11px;
+      color: var(--tdm-color-gray);
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div>
+      <div class="brand-logo"><span class="brand-badge">THỢ</span>ĐẤT MỎ</div>
+      <div class="brand-desc">KỸ THUẬT TẬN NƠI • CẨM PHẢ • QUẢNG NINH</div>
+    </div>
+    <div class="doc-meta">
+      <div>Hotline: <strong>0888 942 247</strong></div>
+      <div>Website: <strong>datmo.io.vn</strong></div>
+      <div>Mã đơn: <strong>DM-[XXXX]</strong></div>
+      <div>Ngày hoàn thành: <strong>DD/MM/YYYY</strong></div>
+    </div>
+  </div>
+
+  <div class="doc-title">PHIẾU BÀN GIAO & NGHIỆM THU CÔNG VIỆC</div>
+
+  <div class="info-grid">
+    <div>
+      <div class="info-row">
+        <span class="info-label">Khách hàng:</span>
+        <span class="info-value">....................................................................</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Số điện thoại:</span>
+        <span class="info-value">....................................................................</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Địa chỉ:</span>
+        <span class="info-value">Cẩm Phả, Quảng Ninh</span>
+      </div>
+    </div>
+    <div>
+      <div class="info-row">
+        <span class="info-label">Hạng mục xử lý:</span>
+        <span class="info-value">....................................................................</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Thợ phụ trách:</span>
+        <span class="info-value">....................................................................</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Thời gian làm:</span>
+        <span class="info-value">Từ ........h........ đến ........h........</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">KẾT QUẢ TRIỂN KHAI VÀ NGHIỆM THU</div>
+  <div class="task-list">
+    <div class="task-item">
+      <span class="checkbox"></span>
+      <span>Đã kiểm tra tình trạng ban đầu và thống nhất phương án xử lý với khách hàng.</span>
+    </div>
+    <div class="task-item">
+      <span class="checkbox"></span>
+      <span>Đã thực hiện xong các hạng mục kỹ thuật theo thỏa thuận.</span>
+    </div>
+    <div class="task-item">
+      <span class="checkbox"></span>
+      <span>Thiết bị đã vận hành thử nghiệm ổn định, đạt yêu cầu kỹ thuật.</span>
+    </div>
+    <div class="task-item">
+      <span class="checkbox"></span>
+      <span>Đã thu dọn sạch sẽ khu vực làm việc trước khi bàn giao.</span>
+    </div>
+  </div>
+
+  <div class="warranty-card">
+    <div class="warranty-title">CAM KẾT BẢO HÀNH & HỖ TRỢ KỸ THUẬT</div>
+    <div>- Hạng mục bảo hành: ............................................................................................................</div>
+    <div>- Thời hạn bảo hành: <strong>.......... tháng</strong> (kể từ ngày bàn giao đến: ....../....../202...)</div>
+    <div>- Đã dán tem bảo hành THỢ ĐẤT MỎ trên thiết bị / linh kiện thay thế: [  ] Có  [  ] Không</div>
+    <div>- Mọi phản hồi hoặc cần hỗ trợ bảo hành, vui lòng liên hệ trực tiếp hotline: <strong>0888 942 247</strong></div>
+  </div>
+
+  <div class="info-row" style="margin-bottom: 24px; font-size: 14px; font-weight: 700;">
+    <span style="width: 180px;">Số tiền đã thanh toán:</span>
+    <span class="info-value" style="font-size: 16px; color: #B38600;">............................................................ VNĐ</span>
+  </div>
+
+  <div class="signatures">
+    <div class="sig-col">
+      <strong>KHÁCH HÀNG NGHIỆM THU</strong>
+      <div style="font-size: 11px; color: #777;">(Ký và xác nhận đã kiểm tra máy)</div>
+      <div class="sig-space"></div>
+    </div>
+    <div class="sig-col">
+      <strong>THỢ KỸ THUẬT THI CÔNG</strong>
+      <div style="font-size: 11px; color: #777;">(Ký và ghi rõ họ tên)</div>
+      <div class="sig-space"></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div>THỢ ĐẤT MỎ — Việc kỹ thuật, có Thợ Đất Mỏ.</div>
+    <div>Hotline điều phối: 0888 942 247 • Cẩm Phả, Quảng Ninh</div>
+  </div>
+</body>
+</html>

@@ -9,11 +9,11 @@ Keep §0 under 15 lines. Specs for each task are in `AGENTS.md` §7.
 
 - Last updated: 2026-10-12 · by: Gemini Flash
 - Last model: Gemini Flash
-- CURRENT TASK: T07 Ops sheets + business documents
+- CURRENT TASK: T04 Facebook avatar and cover
 - STATUS: not started
-- NEXT ACTION: Create ops/leads.csv + ops/ad-tracker.csv + ops/README.md with unit economics formulas + business documents (báo giá, bàn giao, tem bảo hành) per Design System §18-19.
+- NEXT ACTION: Export official badge avatar (1080x1080) + design Facebook cover (1640x624) in 2 options (black & yellow bg) with mobile safe zone check → exports/THO-DAT-MO_FB_COVER_*.png.
 - Files in progress: none
-- Do not redo: T00, T01, T02 (done)
+- Do not redo: T00, T01, T02, T07 (done)
 - Blockers: none
 
 ---
@@ -23,7 +23,7 @@ Keep §0 under 15 lines. Specs for each task are in `AGENTS.md` §7.
 - [x] T00 Inventory and scaffold
 - [x] T01 Logo audit (no redesign)
 - [x] T02 Fonts, glyph test, tokens
-- [ ] T07 Ops sheets + business documents
+- [x] T07 Ops sheets + business documents
 - [ ] T04 Facebook avatar and cover
 - [ ] T05a Điện lạnh copy bank + photo shotlist
 - [ ] T08 Copy pack (FB about, GBP, 6 transition posts)
@@ -106,6 +106,15 @@ Status values: READY (usable as-is) / PREVIEW (placeholders or unconfirmed claim
 | `reports/02-glyph-test.png` | DONE | Vietnamese diacritics benchmark pass for Oswald, Anton, Be Vietnam Pro |
 | `assets/tokens.css` | READY | Core design tokens (colors, typography, spacing, radius, shadows) |
 | `assets/tokens.json` | READY | JSON design tokens for tooling / templates |
+| `ops/leads.csv` | READY | Operational lead/dispatch tracking sheet |
+| `ops/ad-tracker.csv` | READY | Daily advertising performance and CAC tracking sheet |
+| `ops/README.md` | READY | Operational SOP & unit economics calculation guide |
+| `ops/templates/bao-gia.html` | READY | HTML service quote template |
+| `exports/THO-DAT-MO_BAO_GIA_A4.pdf` | READY | Print-ready A4 service quote PDF |
+| `ops/templates/phieu-ban-giao.html` | READY | HTML handover & acceptance template |
+| `exports/THO-DAT-MO_PHIEU_BAN_GIAO_A4.pdf` | READY | Print-ready A4 handover document PDF |
+| `ops/templates/tem-bao-hanh.html` | READY | HTML warranty sticker template (80x50mm + 4-up sheet) |
+| `exports/THO-DAT-MO_TEM_BAO_HANH.pdf` | READY | Print-ready warranty sticker PDF / PNG |
 
 ---
 
@@ -115,3 +124,4 @@ Status values: READY (usable as-is) / PREVIEW (placeholders or unconfirmed claim
 - 2026-10-12 · Claude Sonnet 4.6 · T00 done. Scaffold created (11 dirs). Logo L1 identified (PNG only, no vector). reports/00-inventory.md written. PROGRESS.md updated. → NEXT: T01.
 - 2026-10-12 · Claude Sonnet 4.6 · T01 done. Logo sheet analyzed: 3 variants found (horizontal primary V1, square badge V2, black-on-white V3). Diacritics PASS. Colors PASS. 5 derived PNGs exported to assets/logo-derived/. Missing: stacked + wordmark variants (logged Q8). → NEXT: T02.
 - 2026-10-12 · Gemini Flash · T02 done. Self-hosted woff2 downloaded. Glyph test rendered to reports/02-glyph-test.png (Oswald 700 selected for display, Be Vietnam Pro for body). assets/tokens.css & tokens.json created. → NEXT: T07.
+- 2026-10-12 · Gemini Flash · T07 done. ops/leads.csv, ops/ad-tracker.csv, ops/README.md (unit economics formulas) created. Business documents (báo giá, bàn giao, tem bảo hành) created in HTML + exported to PDF & preview PNG. → NEXT: T04.

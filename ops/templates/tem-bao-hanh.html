@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Tem Bảo Hành — THỢ ĐẤT MỎ</title>
+  <link rel="stylesheet" href="../../assets/tokens.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: #E5E5E5;
+      font-family: var(--tdm-font-body);
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+    .sticker-container {
+      width: 320px;
+      height: 200px;
+      background: var(--tdm-color-yellow);
+      border: 3px solid var(--tdm-color-black);
+      border-radius: var(--tdm-radius-md);
+      padding: 12px 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      color: var(--tdm-color-black);
+    }
+    /* Industrial cut corner simulation */
+    .sticker-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid var(--tdm-color-black);
+      padding-bottom: 8px;
+    }
+    .sticker-brand {
+      font-family: var(--tdm-font-display);
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .brand-black-badge {
+      background: var(--tdm-color-black);
+      color: var(--tdm-color-yellow);
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-size: 16px;
+    }
+    .sticker-tag {
+      font-family: var(--tdm-font-display);
+      font-size: 11px;
+      background: var(--tdm-color-black);
+      color: #FFFFFF;
+      padding: 3px 6px;
+      border-radius: 2px;
+      letter-spacing: 0.5px;
+    }
+    .sticker-body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin: 6px 0;
+    }
+    .field-box {
+      background: rgba(255, 255, 255, 0.6);
+      border: 1px solid rgba(0, 0, 0, 0.4);
+      border-radius: 4px;
+      padding: 4px 8px;
+    }
+    .field-label {
+      font-size: 9px;
+      font-weight: 700;
+      color: #333333;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .field-value {
+      font-family: var(--tdm-font-display);
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--tdm-color-black);
+      letter-spacing: 0.5px;
+    }
+    .sticker-footer {
+      border-top: 1.5px solid var(--tdm-color-black);
+      padding-top: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 10px;
+      font-weight: 700;
+    }
+    .hotline-call {
+      font-family: var(--tdm-font-display);
+      font-size: 15px;
+      color: var(--tdm-color-black);
+      letter-spacing: 0.5px;
+    }
+    .sheet-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 320px);
+      gap: 20px;
+      background: #FFFFFF;
+      padding: 30px;
+      border: 1px dashed #AAAAAA;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div style="font-family: var(--tdm-font-display); font-size: 20px; color: #333;">TEM BẢO HÀNH KỸ THUẬT (MẪU TIÊU CHUẨN 80×50mm)</div>
+
+  <div class="sticker-container">
+    <div class="sticker-header">
+      <div class="sticker-brand">
+        <span class="brand-black-badge">THỢ</span> ĐẤT MỎ
+      </div>
+      <div class="sticker-tag">TEM BẢO HÀNH</div>
+    </div>
+
+    <div class="sticker-body">
+      <div class="field-box">
+        <div class="field-label">MÃ ĐƠN</div>
+        <div class="field-value">DM-..........</div>
+      </div>
+      <div class="field-box">
+        <div class="field-label">HOÀN THÀNH</div>
+        <div class="field-value">.... / .... / 202...</div>
+      </div>
+      <div class="field-box" style="grid-column: span 2;">
+        <div class="field-label">THỜI HẠN BẢO HÀNH</div>
+        <div class="field-value">.......... THÁNG</div>
+      </div>
+    </div>
+
+    <div class="sticker-footer">
+      <div>CẨM PHẢ • QUẢNG NINH</div>
+      <div>HOTLINE: <span class="hotline-call">0888 942 247</span></div>
+    </div>
+  </div>
+
+  <div style="margin-top: 20px; font-size: 12px; color: #666;">Bản in 4 tem trên khổ A4 / Decal:</div>
+
+  <div class="sheet-grid">
+    <!-- Duplicate 4 stickers for print sheet -->
+    <div class="sticker-container" style="box-shadow: none;">
+      <div class="sticker-header">
+        <div class="sticker-brand"><span class="brand-black-badge">THỢ</span> ĐẤT MỎ</div>
+        <div class="sticker-tag">TEM BẢO HÀNH</div>
+      </div>
+      <div class="sticker-body">
+        <div class="field-box"><div class="field-label">MÃ ĐƠN</div><div class="field-value">DM-..........</div></div>
+        <div class="field-box"><div class="field-label">HOÀN THÀNH</div><div class="field-value">.... / .... / 202...</div></div>
+        <div class="field-box" style="grid-column: span 2;"><div class="field-label">THỜI HẠN BẢO HÀNH</div><div class="field-value">.......... THÁNG</div></div>
+      </div>
+      <div class="sticker-footer">
+        <div>CẨM PHẢ</div>
+        <div>HOTLINE: <span class="hotline-call">0888 942 247</span></div>
+      </div>
+    </div>
+
+    <div class="sticker-container" style="box-shadow: none;">
+      <div class="sticker-header">
+        <div class="sticker-brand"><span class="brand-black-badge">THỢ</span> ĐẤT MỎ</div>
+        <div class="sticker-tag">TEM BẢO HÀNH</div>
+      </div>
+      <div class="sticker-body">
+        <div class="field-box"><div class="field-label">MÃ ĐƠN</div><div class="field-value">DM-..........</div></div>
+        <div class="field-box"><div class="field-label">HOÀN THÀNH</div><div class="field-value">.... / .... / 202...</div></div>
+        <div class="field-box" style="grid-column: span 2;"><div class="field-label">THỜI HẠN BẢO HÀNH</div><div class="field-value">.......... THÁNG</div></div>
+      </div>
+      <div class="sticker-footer">
+        <div>CẨM PHẢ</div>
+        <div>HOTLINE: <span class="hotline-call">0888 942 247</span></div>
+      </div>
+    </div>
+
+    <div class="sticker-container" style="box-shadow: none;">
+      <div class="sticker-header">
+        <div class="sticker-brand"><span class="brand-black-badge">THỢ</span> ĐẤT MỎ</div>
+        <div class="sticker-tag">TEM BẢO HÀNH</div>
+      </div>
+      <div class="sticker-body">
+        <div class="field-box"><div class="field-label">MÃ ĐƠN</div><div class="field-value">DM-..........</div></div>
+        <div class="field-box"><div class="field-label">HOÀN THÀNH</div><div class="field-value">.... / .... / 202...</div></div>
+        <div class="field-box" style="grid-column: span 2;"><div class="field-label">THỜI HẠN BẢO HÀNH</div><div class="field-value">.......... THÁNG</div></div>
+      </div>
+      <div class="sticker-footer">
+        <div>CẨM PHẢ</div>
+        <div>HOTLINE: <span class="hotline-call">0888 942 247</span></div>
+      </div>
+    </div>
+
+    <div class="sticker-container" style="box-shadow: none;">
+      <div class="sticker-header">
+        <div class="sticker-brand"><span class="brand-black-badge">THỢ</span> ĐẤT MỎ</div>
+        <div class="sticker-tag">TEM BẢO HÀNH</div>
+      </div>
+      <div class="sticker-body">
+        <div class="field-box"><div class="field-label">MÃ ĐƠN</div><div class="field-value">DM-..........</div></div>
+        <div class="field-box"><div class="field-label">HOÀN THÀNH</div><div class="field-value">.... / .... / 202...</div></div>
+        <div class="field-box" style="grid-column: span 2;"><div class="field-label">THỜI HẠN BẢO HÀNH</div><div class="field-value">.......... THÁNG</div></div>
+      </div>
+      <div class="sticker-footer">
+        <div>CẨM PHẢ</div>
+        <div>HOTLINE: <span class="hotline-call">0888 942 247</span></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

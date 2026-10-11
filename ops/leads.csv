@@ -1,0 +1,4 @@
+id,date,source,service,customer,phone,area,status,quote_vnd,final_vnd,technician,tech_cost_vnd,other_cost_vnd,profit_vnd,notes
+DM-2601,2026-10-12,Facebook Ad,Điện lạnh,Nguyễn Văn A,0912345678,Cẩm Trung,Hoàn thành,450000,450000,Thợ Tuấn,300000,0,150000,Vệ sinh bảo dưỡng điều hòa 12000
+DM-2602,2026-10-12,Hotline trực tiếp,Camera,Trần Thị B,0987654321,Cẩm Thành,Đã báo giá,1200000,,,Thợ Hùng,,,Khảo sát lắp 2 mắt camera gia đình
+DM-2603,2026-10-13,Zalo,Điện nước,Lê Văn C,0903123456,Cẩm Thạch,Đang xử lý,350000,,Thợ Nam,,0,,Sửa rò rỉ van nước tổng
