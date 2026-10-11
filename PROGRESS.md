@@ -9,11 +9,11 @@ Keep §0 under 15 lines. Specs for each task are in `AGENTS.md` §7.
 
 - Last updated: 2026-10-12 · by: Gemini Flash
 - Last model: Gemini Flash
-- CURRENT TASK: T08 Copy pack
+- CURRENT TASK: T05b Điện lạnh ad concept 1 (3 ratios, PREVIEW)
 - STATUS: not started
-- NEXT ACTION: Write copy/facebook-about.md (Page name, intro, about within platform limits) + copy/gbp.md (Google Business Profile) + 6 transition posts with photo briefs → tick §1.
+- NEXT ACTION: Create ad templates for Concept 1 in 3 ratios (1:1 1080x1080, 4:5 1080x1350, 9:16 1080x1920) with photo placeholders and render PREVIEW exports → tick §1.
 - Files in progress: none
-- Do not redo: T00, T01, T02, T07, T04, T05a (done)
+- Do not redo: T00, T01, T02, T07, T04, T05a, T08 (done)
 - Blockers: none
 
 ---
@@ -26,7 +26,7 @@ Keep §0 under 15 lines. Specs for each task are in `AGENTS.md` §7.
 - [x] T07 Ops sheets + business documents
 - [x] T04 Facebook avatar and cover
 - [x] T05a Điện lạnh copy bank + photo shotlist
-- [ ] T08 Copy pack (FB about, GBP, 6 transition posts)
+- [x] T08 Copy pack (FB about, GBP, 6 transition posts)
 - [ ] T05b Điện lạnh ad concept 1 (3 ratios, PREVIEW)
 - [ ] T05c Điện lạnh ad concept 2 (3 ratios, PREVIEW)
 - [ ] T05d Điện lạnh ad concept 3 (3 ratios, PREVIEW)
@@ -122,6 +122,9 @@ Status values: READY (usable as-is) / PREVIEW (placeholders or unconfirmed claim
 | `reports/cover-safezone-check.png` | DONE | Mobile safe zone overlay validation for cover |
 | `copy/photo-shotlist.md` | READY | 7 concrete real photo briefs for Dien lanh technicians |
 | `copy/dien-lanh-copy-bank.md` | READY | 10 headlines (<=7 words) + 5 primary texts (<=3 lines) tagged by angle |
+| `copy/facebook-about.md` | READY | Facebook page setup, bio (152 chars) and about copy |
+| `copy/gbp.md` | READY | Google Business Profile categories, description (588 chars), services list |
+| `copy/transition-posts.md` | READY | 6 transition posts with real photo briefs for page rebrand |
 
 ---
 
@@ -134,3 +137,4 @@ Status values: READY (usable as-is) / PREVIEW (placeholders or unconfirmed claim
 - 2026-10-12 · Gemini Flash · T07 done. ops/leads.csv, ops/ad-tracker.csv, ops/README.md (unit economics formulas) created. Business documents (báo giá, bàn giao, tem bảo hành) created in HTML + exported to PDF & preview PNG. → NEXT: T04.
 - 2026-10-12 · Gemini Flash · T04 done. Avatar exported to 1080x1080 (verified circular crop & 40px display). Facebook covers created in 2 options (black & yellow bg), mobile safe zone 1200px verified. → NEXT: T05a.
 - 2026-10-12 · Gemini Flash · T05a done. copy/photo-shotlist.md (7 real shots for AC technicians) and copy/dien-lanh-copy-bank.md (10 headlines, 5 primary texts) completed. → NEXT: T08.
+- 2026-10-12 · Gemini Flash · T08 done. copy/facebook-about.md, copy/gbp.md, copy/transition-posts.md (6 posts with photo briefs) completed within platform limits. → NEXT: T05b.
