@@ -9,11 +9,11 @@ Keep §0 under 15 lines. Specs for each task are in `AGENTS.md` §7.
 
 - Last updated: 2026-10-12 · by: Gemini Flash
 - Last model: Gemini Flash
-- CURRENT TASK: T05a Điện lạnh copy bank + photo shotlist
+- CURRENT TASK: T08 Copy pack
 - STATUS: not started
-- NEXT ACTION: Write copy/photo-shotlist.md (5-8 real photo briefs unblocking Trung) + copy/dien-lanh-copy-bank.md (10 headlines, 5 primary texts) → tick §1.
+- NEXT ACTION: Write copy/facebook-about.md (Page name, intro, about within platform limits) + copy/gbp.md (Google Business Profile) + 6 transition posts with photo briefs → tick §1.
 - Files in progress: none
-- Do not redo: T00, T01, T02, T07, T04 (done)
+- Do not redo: T00, T01, T02, T07, T04, T05a (done)
 - Blockers: none
 
 ---
@@ -25,7 +25,7 @@ Keep §0 under 15 lines. Specs for each task are in `AGENTS.md` §7.
 - [x] T02 Fonts, glyph test, tokens
 - [x] T07 Ops sheets + business documents
 - [x] T04 Facebook avatar and cover
-- [ ] T05a Điện lạnh copy bank + photo shotlist
+- [x] T05a Điện lạnh copy bank + photo shotlist
 - [ ] T08 Copy pack (FB about, GBP, 6 transition posts)
 - [ ] T05b Điện lạnh ad concept 1 (3 ratios, PREVIEW)
 - [ ] T05c Điện lạnh ad concept 2 (3 ratios, PREVIEW)
@@ -120,6 +120,8 @@ Status values: READY (usable as-is) / PREVIEW (placeholders or unconfirmed claim
 | `exports/THO-DAT-MO_COVER_FB_1640x624_YELLOW_v01.png` | READY | FB cover Option 2 (Yellow bg), 100% content inside mobile safe zone |
 | `reports/avatar-circular-check.png` | DONE | Circle crop mask validation for avatar |
 | `reports/cover-safezone-check.png` | DONE | Mobile safe zone overlay validation for cover |
+| `copy/photo-shotlist.md` | READY | 7 concrete real photo briefs for Dien lanh technicians |
+| `copy/dien-lanh-copy-bank.md` | READY | 10 headlines (<=7 words) + 5 primary texts (<=3 lines) tagged by angle |
 
 ---
 
@@ -131,3 +133,4 @@ Status values: READY (usable as-is) / PREVIEW (placeholders or unconfirmed claim
 - 2026-10-12 · Gemini Flash · T02 done. Self-hosted woff2 downloaded. Glyph test rendered to reports/02-glyph-test.png (Oswald 700 selected for display, Be Vietnam Pro for body). assets/tokens.css & tokens.json created. → NEXT: T07.
 - 2026-10-12 · Gemini Flash · T07 done. ops/leads.csv, ops/ad-tracker.csv, ops/README.md (unit economics formulas) created. Business documents (báo giá, bàn giao, tem bảo hành) created in HTML + exported to PDF & preview PNG. → NEXT: T04.
 - 2026-10-12 · Gemini Flash · T04 done. Avatar exported to 1080x1080 (verified circular crop & 40px display). Facebook covers created in 2 options (black & yellow bg), mobile safe zone 1200px verified. → NEXT: T05a.
+- 2026-10-12 · Gemini Flash · T05a done. copy/photo-shotlist.md (7 real shots for AC technicians) and copy/dien-lanh-copy-bank.md (10 headlines, 5 primary texts) completed. → NEXT: T08.
