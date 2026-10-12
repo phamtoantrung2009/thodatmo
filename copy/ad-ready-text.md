@@ -34,8 +34,8 @@ Tuân thủ nghiêm ngặt: Không dùng claim chưa xác nhận (không 24/7, k
 
 - **Primary Text (Văn bản chính — 3 dòng ngắn):**
   ```text
-  Cần tìm thợ sửa điều hòa sinh sống và làm việc ngay tại khu vực Cẩm Phả?
-  Có sẵn thợ kỹ thuật tại địa bàn, qua kiểm tra tận nhà khắp các phường xã.
+  Cần tìm thợ sửa điều hòa ngay khu vực Cẩm Phả?
+  Thợ Đất Mỏ kết nối thợ kỹ thuật tại địa bàn đến kiểm tra tận nhà.
   Việc kỹ thuật, gọi Thợ Đất Mỏ: 0888 942 247.
   ```
 
