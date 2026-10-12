@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Ad N3 — 1:1 (1080x1080) — THỢ ĐẤT MỎ (MAINTENANCE - NO-PHOTO)</title>
+  <title>Ad N3 — 1:1 (1080x1080) — THỢ ĐẤT MỎ (MAINTENANCE v02)</title>
   <link rel="stylesheet" href="../../assets/tokens.css">
   <style>
     * {
@@ -14,14 +14,14 @@
       width: 1080px;
       height: 1080px;
       background-color: var(--tdm-color-black);
-      color: var(--tdm-color-white);
+      color: #FFFFFF;
       font-family: var(--tdm-font-body);
       overflow: hidden;
       position: relative;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      padding: 56px;
+      padding: 64px 70px;
     }
     .bg-grid {
       position: absolute;
@@ -41,7 +41,7 @@
     }
     .logo-badge {
       background: #FFFFFF;
-      padding: 10px 22px;
+      padding: 10px 24px;
       border-radius: var(--tdm-radius-sm);
       border-left: 6px solid var(--tdm-color-yellow);
       display: flex;
@@ -56,8 +56,8 @@
       border: 1px solid #333333;
       color: var(--tdm-color-yellow);
       font-family: var(--tdm-font-display);
-      font-size: 15px;
-      padding: 10px 18px;
+      font-size: 26px;
+      padding: 10px 22px;
       border-radius: var(--tdm-radius-sm);
       letter-spacing: 0.5px;
       text-transform: uppercase;
@@ -79,24 +79,24 @@
     .card-eyebrow {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
       font-family: var(--tdm-font-display);
-      font-size: 18px;
+      font-size: 26px;
       font-weight: 700;
       letter-spacing: 1px;
       text-transform: uppercase;
       color: #1A1A1A;
-      margin-bottom: 12px;
+      margin-bottom: 16px;
     }
     .card-eyebrow svg {
-      width: 24px;
-      height: 24px;
+      width: 28px;
+      height: 28px;
       stroke: #1A1A1A;
     }
     .main-headline {
       font-family: var(--tdm-font-display);
       font-size: 64px;
-      line-height: 1.05;
+      line-height: 1.25;
       text-transform: uppercase;
       letter-spacing: -0.5px;
       color: var(--tdm-color-black);
@@ -111,7 +111,7 @@
       display: flex;
       align-items: center;
       gap: 14px;
-      font-size: 21px;
+      font-size: 26px;
       font-weight: 700;
       color: #111111;
       background: rgba(0, 0, 0, 0.08);
@@ -119,8 +119,8 @@
       border-radius: var(--tdm-radius-sm);
     }
     .check-icon {
-      font-size: 22px;
-      color: #000000;
+      font-size: 26px;
+      color: #080808;
       font-weight: 900;
     }
 
@@ -136,13 +136,14 @@
       background: #141414;
       border: 1px solid #282828;
       border-left: 4px solid var(--tdm-color-yellow);
-      padding: 14px 18px;
+      padding: 14px 20px;
       border-radius: 0 var(--tdm-radius-sm) var(--tdm-radius-sm) 0;
       font-family: var(--tdm-font-display);
-      font-size: 16px;
-      color: #DDDDDD;
+      font-size: 26px;
+      color: #FFFFFF;
       text-transform: uppercase;
       letter-spacing: 0.5px;
+      text-align: center;
     }
 
     /* Bottom CTA Bar */
@@ -161,15 +162,9 @@
       flex-direction: column;
       gap: 4px;
     }
-    .cta-sub {
-      font-size: 14px;
-      color: #888888;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
     .cta-action {
       font-family: var(--tdm-font-display);
-      font-size: 28px;
+      font-size: 30px;
       font-weight: 700;
       color: #FFFFFF;
       text-transform: uppercase;
@@ -181,24 +176,16 @@
     .cta-phone-btn {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 16px;
       background: var(--tdm-color-yellow);
       color: var(--tdm-color-black);
-      padding: 16px 28px;
+      padding: 14px 26px;
       border-radius: var(--tdm-radius-sm);
       box-shadow: 0 4px 16px rgba(255, 210, 0, 0.3);
     }
-    .phone-label {
-      font-size: 13px;
-      font-weight: 700;
-      background: var(--tdm-color-black);
-      color: #FFFFFF;
-      padding: 4px 8px;
-      border-radius: 3px;
-    }
     .phone-number {
       font-family: var(--tdm-font-display);
-      font-size: 38px;
+      font-size: 40px;
       font-weight: 700;
       letter-spacing: 1px;
     }
@@ -208,24 +195,23 @@
   <div class="bg-grid"></div>
 
   <!-- Header -->
-  <div class="header">
-    <div class="logo-badge">
+  <div class="header" id="ad-header">
+    <div class="logo-badge" id="ad-logo">
       <img src="../../assets/logo-derived/THO-DAT-MO_LOGO_HORIZONTAL_transparent_v01.png" alt="THỢ ĐẤT MỎ" class="logo-img">
     </div>
-    <div class="location-tag">● CẨM PHẢ • QUẢNG NINH</div>
+    <div class="location-tag">CẨM PHẢ • QUẢNG NINH</div>
   </div>
 
   <!-- Center Graphic Card: Maintenance Angle -->
   <div class="center-card">
     <div class="card-eyebrow">
-      <!-- Shield / Check SVG -->
       <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
         <path d="m9 12 2 2 4-4"/>
       </svg>
       <span>BẢO DƯỠNG ĐỊNH KỲ • TIẾT KIỆM ĐIỆN</span>
     </div>
-    <div class="main-headline">
+    <div class="main-headline" id="ad-title">
       VỆ SINH ĐIỀU HÒA SẠCH.<br>MÁY CHẠY ÊM, MÁT SÂU.
     </div>
     <div class="check-list">
@@ -245,17 +231,14 @@
   <div class="service-badge-bar">
     <div class="service-tag">Thợ kỹ thuật tại Cẩm Phả</div>
     <div class="service-tag">Bảo dưỡng điều hòa tận nơi</div>
-    <div class="service-tag">Thiết bị chạy êm đón hè</div>
   </div>
 
   <!-- Bottom CTA -->
-  <div class="cta-bar">
+  <div class="cta-bar" id="ad-cta">
     <div class="cta-left">
-      <div class="cta-sub">VIỆC KỸ THUẬT, CÓ THỢ ĐẤT MỎ</div>
-      <div class="cta-action">CẦN THỢ? <span>GỌI NGAY</span></div>
+      <div class="cta-action">CẦN THỢ? <span>GỌI THỢ ĐẤT MỎ</span></div>
     </div>
-    <div class="cta-phone-btn">
-      <span class="phone-label">HOTLINE</span>
+    <div class="cta-phone-btn" id="ad-hotline">
       <span class="phone-number">0888 942 247</span>
     </div>
   </div>
