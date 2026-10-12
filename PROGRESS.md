@@ -9,12 +9,12 @@ Keep §0 under 15 lines. Specs for each task are in `AGENTS.md` §7.
 
 - Last updated: 2026-10-12 · by: Gemini Flash
 - Last model: Gemini Flash
-- CURRENT TASK: Test ads Camera & IT — 12 PNGs READY TO RUN
-- STATUS: READY TO RUN (Trung tự chạy ad theo ad-test-rules.md)
-- NEXT ACTION: Trung nạp ngân sách chạy tuần tự: ngày 1–10 Camera K1 (~15.000đ/ngày), ngày 11–20 IT M1 (~15.000đ/ngày). Ghi nhận mỗi liên hệ vào ops/leads.csv. Không đụng landing page.
+- CURRENT TASK: T11 hoàn tất — Toàn bộ 5 dịch vụ (Camera, IT, Wi-Fi, Điện nước, Solar) đã có tài nguyên ads & copy READY
+- STATUS: READY (chỉ tạo file, Trung tự chạy ad và đăng bài)
+- NEXT ACTION: Trung nạp ngân sách chạy test ad Camera K1 (ngày 1–10, 15k/ngày) rồi IT M1 (ngày 11–20) theo copy/ad-test-rules.md; đăng bài nuôi page bằng copy/post-pack.md.
 - Files in progress: none
-- Do not redo: T00-T08, T05e, Camera K1/K2, IT M1/M2
-- Blockers: Không có blocker cho Camera/IT. (Q10 chỉ liên quan N1/N2 Điện lạnh đã tạm dừng, không chặn Camera/IT).
+- Do not redo: T00-T10, T11a-d (tất cả đã READY)
+- Blockers: Không có blocker.
 
 ---
 
@@ -36,7 +36,11 @@ Keep §0 under 15 lines. Specs for each task are in `AGENTS.md` §7.
 - [x] MVP QA pass and report to Trung
 - [x] T10 Camera ads K1/K2 (6 PNGs READY, copy bank + shotlist done)
 - [x] T10-IT: IT/Máy tính ads M1/M2 (7 PNGs READY, gồm M1 4:5 v02 cân đối)
-- T03 icons: just-in-time inside T05/T06 (done: inline SVGs for all services)
+- [x] T11a Wi-Fi/mạng: ad W1 (3 PNGs READY, Trung tự làm: "Thợ Đất Mỏ nhận...")
+- [x] T11b Sửa chữa điện nước: ad D1 (3 PNGs READY, "Thợ Đất Mỏ kết nối thợ địa phương")
+- [x] T11c Điện mặt trời: ad S1 (3 PNGs READY, "kết nối thợ địa phương", không hứa liều)
+- [x] T11d Tài nguyên bổ trợ: copy bank + 15 bài post-pack nuôi page + photo shotlist an toàn
+- T03 icons: just-in-time inside T05/T06/T11 (inline SVGs cho toàn bộ dịch vụ)
 - T09 DEFERRED, do not start unless Trung asks
 
 ---
@@ -58,6 +62,7 @@ Keep §0 under 15 lines. Specs for each task are in `AGENTS.md` §7.
 - 2026-10-12 · Chuyển trọng tâm sang Camera + IT (Trung tự làm); Điện lạnh SEASONAL-PAUSED (mùa lạnh + Trung chỉ hưởng 30%).
 - 2026-10-12 · Camera K1 (problem: CẦN LẮP CAMERA?) và K2 (local: LẮP CAMERA THỢ ĐẤT MỎ NHẬN.) — 6 PNGs xuất xong, QA pass, status PREVIEW.
 - 2026-10-12 · IT / Máy tính M1 (problem: CẦN LẮP RÁP PC?) và M2 (local/skills: CÀI ĐẶT PHẦN MỀM.) — 6 PNGs xuất xong, QA pass (safe zone 9:16 y=280→1230, font>=26px, no red), status PREVIEW.
+- 2026-10-12 · T11 hoàn tất: 3 dịch vụ Wi-Fi (W1), Điện nước (D1), Điện mặt trời (S1) xuất 9 PNG v01 READY (an toàn, 4 điều pass, 9:16 safe zone chuẩn). Kèm copy bank, 15 bài post nuôi page, và shotlist an toàn (không chụp mặt/địa chỉ, solar không trèo mái).
 
 ---
 
@@ -253,6 +258,18 @@ Status values: READY (usable as-is) / PREVIEW (placeholders or unconfirmed claim
 | `exports/THO-DAT-MO_AD_M2_1x1_1080x1080_v01.png` | READY | IT M2 (CÀI ĐẶT PHẦN MỀM.) 1:1 — 4 điều PASS |
 | `exports/THO-DAT-MO_AD_M2_4x5_1080x1350_v01.png` | READY | IT M2 4:5 — 4 điều PASS |
 | `exports/THO-DAT-MO_AD_M2_9x16_1080x1920_v01.png` | READY | IT M2 9:16 — safe zone PASS (y=280→1230), 4 điều PASS |
+| `exports/THO-DAT-MO_AD_W1_1x1_1080x1080_v01.png` | READY | Wi-Fi W1 (WI-FI YẾU? MẤT SÓNG?) 1:1 — 4 điều PASS |
+| `exports/THO-DAT-MO_AD_W1_4x5_1080x1350_v01.png` | READY | Wi-Fi W1 4:5 — layout cân đối, 4 điều PASS |
+| `exports/THO-DAT-MO_AD_W1_9x16_1080x1920_v01.png` | READY | Wi-Fi W1 9:16 — safe zone PASS (y=280→1230), 4 điều PASS |
+| `exports/THO-DAT-MO_AD_D1_1x1_1080x1080_v01.png` | READY | Điện nước D1 (HỎNG ĐIỆN, NƯỚC?) 1:1 — kết nối thợ địa phương, 4 điều PASS |
+| `exports/THO-DAT-MO_AD_D1_4x5_1080x1350_v01.png` | READY | Điện nước D1 4:5 — layout cân đối, 4 điều PASS |
+| `exports/THO-DAT-MO_AD_D1_9x16_1080x1920_v01.png` | READY | Điện nước D1 9:16 — safe zone PASS (y=280→1230), 4 điều PASS |
+| `exports/THO-DAT-MO_AD_S1_1x1_1080x1080_v01.png` | READY | Solar S1 (TÍNH LẮP ĐIỆN MẶT TRỜI?) 1:1 — kết nối thợ địa phương, ko hứa liều, 4 điều PASS |
+| `exports/THO-DAT-MO_AD_S1_4x5_1080x1350_v01.png` | READY | Solar S1 4:5 — layout cân đối, 4 điều PASS |
+| `exports/THO-DAT-MO_AD_S1_9x16_1080x1920_v01.png` | READY | Solar S1 9:16 — safe zone PASS (y=280→1230), 4 điều PASS |
+| `copy/ad-ready-text-wifi-dien-nuoc-solar.md` | READY | Copy bank 3 dịch vụ: 6 headlines + 6 primary texts (<=3 dòng) + nút Gọi ngay |
+| `copy/post-pack.md` | READY | 15 bài đăng page ngắn (<=4 dòng) kiểu mẹo/nhận biết sự cố kèm gợi ý ảnh |
+| `copy/photo-shotlist-3-services.md` | READY | 15 góc chụp ảnh thật (5 góc/dịch vụ) tuân thủ an toàn & bảo mật |
 
 ---
 
@@ -273,3 +290,4 @@ Status values: READY (usable as-is) / PREVIEW (placeholders or unconfirmed claim
 - 2026-10-12 · Gemini · T10 Camera: Tạo concept_k1 và concept_k2 (3 ratios mỗi bộ = 6 HTML template). Xuất 6 PNG v01. QA: diacritics PASS, hotline PASS, no red, 9:16 safe zone PASS (content bắt đầu y=280, kết thúc trước y=1230). Status = PREVIEW (chờ ảnh thật). Next: IT M1/M2.
 - 2026-10-12 · Gemini Flash · T10-IT: Hoàn tất 6 template M1 & M2 (1:1, 4:5, 9:16). Xuất 6 PNG v01. QA pass: safe zone 9:16 chuẩn (y=280→1230), font>=26px, không đỏ, diacritics chuẩn, hotline 0888 942 247. Tổng cộng 12 ad creatives Camera + IT sẵn sàng ở PREVIEW.
 - 2026-10-12 · Gemini Flash · Tinh gọn quy trình: Sửa AGENTS.md O4 (bỏ Whitelist, xác nhận phạm vi Camera/IT). Kiểm 4 điều cho 12 ảnh K/M -> chuyển READY. Cân lại M1 4:5 xuất v02 READY. Cập nhật ad-test-rules.md ngân sách 300k (20 ngày tuần tự K1->M1) và checklist 75k. Q10 không chặn Camera/IT. Không đụng landing page.
+- 2026-10-12 · Gemini Flash · T11 hoàn thành toàn bộ: 3 ad concepts W1, D1, S1 × 3 tỉ lệ = 9 PNGs READY (4 điều pass, 9:16 safe zone chuẩn). Tạo xong ad-ready-text-wifi-dien-nuoc-solar.md, post-pack.md (15 bài đăng page kèm gợi ý ảnh), photo-shotlist-3-services.md (15 góc chụp an toàn). Git commit sạch sẽ sau từng dịch vụ.
