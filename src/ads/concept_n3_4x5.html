@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Ad N3 — 4:5 (1080x1350) — THỢ ĐẤT MỎ (MAINTENANCE - NO-PHOTO)</title>
+  <link rel="stylesheet" href="../../assets/tokens.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      width: 1080px;
+      height: 1350px;
+      background-color: var(--tdm-color-black);
+      color: var(--tdm-color-white);
+      font-family: var(--tdm-font-body);
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 64px;
+    }
+    .bg-grid {
+      position: absolute;
+      inset: 0;
+      background-image: 
+        linear-gradient(rgba(255, 210, 0, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 210, 0, 0.05) 1px, transparent 1px);
+      background-size: 48px 48px;
+      pointer-events: none;
+    }
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 2;
+    }
+    .logo-badge {
+      background: #FFFFFF;
+      padding: 10px 24px;
+      border-radius: var(--tdm-radius-sm);
+      border-left: 6px solid var(--tdm-color-yellow);
+      display: flex;
+      align-items: center;
+    }
+    .logo-img {
+      height: 52px;
+      width: auto;
+    }
+    .location-tag {
+      background: #181818;
+      border: 1px solid #333333;
+      color: var(--tdm-color-yellow);
+      font-family: var(--tdm-font-display);
+      font-size: 16px;
+      padding: 10px 20px;
+      border-radius: var(--tdm-radius-sm);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    /* Central Industrial Card: Maintenance Angle */
+    .center-card {
+      background: var(--tdm-color-yellow);
+      color: var(--tdm-color-black);
+      border-radius: var(--tdm-radius-md);
+      padding: 56px 52px;
+      position: relative;
+      z-index: 2;
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.6);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .card-eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: var(--tdm-font-display);
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #1A1A1A;
+      margin-bottom: 16px;
+    }
+    .card-eyebrow svg {
+      width: 28px;
+      height: 28px;
+      stroke: #1A1A1A;
+    }
+    .main-headline {
+      font-family: var(--tdm-font-display);
+      font-size: 74px;
+      line-height: 1.05;
+      text-transform: uppercase;
+      letter-spacing: -0.5px;
+      color: var(--tdm-color-black);
+      margin-bottom: 32px;
+    }
+    .check-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .check-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 23px;
+      font-weight: 700;
+      color: #111111;
+      background: rgba(0, 0, 0, 0.08);
+      padding: 14px 22px;
+      border-radius: var(--tdm-radius-sm);
+    }
+    .check-icon {
+      font-size: 22px;
+      color: #000000;
+      font-weight: 900;
+    }
+
+    /* Middle info block */
+    .service-badge-bar {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 2;
+    }
+    .service-tag {
+      background: #141414;
+      border: 1px solid #282828;
+      border-left: 5px solid var(--tdm-color-yellow);
+      padding: 18px 24px;
+      border-radius: 0 var(--tdm-radius-sm) var(--tdm-radius-sm) 0;
+      font-family: var(--tdm-font-display);
+      font-size: 20px;
+      color: #DDDDDD;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .service-tag span {
+      color: var(--tdm-color-yellow);
+      font-size: 16px;
+    }
+
+    /* Bottom CTA Bar */
+    .cta-bar {
+      background: #111111;
+      border: 2px solid var(--tdm-color-yellow);
+      border-radius: var(--tdm-radius-sm);
+      padding: 24px 36px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 2;
+    }
+    .cta-left {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .cta-sub {
+      font-size: 15px;
+      color: #888888;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .cta-action {
+      font-family: var(--tdm-font-display);
+      font-size: 32px;
+      font-weight: 700;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .cta-action span {
+      color: var(--tdm-color-yellow);
+    }
+    .cta-phone-btn {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: var(--tdm-color-yellow);
+      color: var(--tdm-color-black);
+      padding: 18px 32px;
+      border-radius: var(--tdm-radius-sm);
+      box-shadow: 0 6px 20px rgba(255, 210, 0, 0.3);
+    }
+    .phone-label {
+      font-size: 14px;
+      font-weight: 700;
+      background: var(--tdm-color-black);
+      color: #FFFFFF;
+      padding: 5px 10px;
+      border-radius: 3px;
+    }
+    .phone-number {
+      font-family: var(--tdm-font-display);
+      font-size: 42px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-grid"></div>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="logo-badge">
+      <img src="../../assets/logo-derived/THO-DAT-MO_LOGO_HORIZONTAL_transparent_v01.png" alt="THỢ ĐẤT MỎ" class="logo-img">
+    </div>
+    <div class="location-tag">● CẨM PHẢ • QUẢNG NINH</div>
+  </div>
+
+  <!-- Center Graphic Card: Maintenance Angle -->
+  <div class="center-card">
+    <div class="card-eyebrow">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        <path d="m9 12 2 2 4-4"/>
+      </svg>
+      <span>BẢO DƯỠNG ĐỊNH KỲ • TIẾT KIỆM ĐIỆN</span>
+    </div>
+    <div class="main-headline">
+      VỆ SINH ĐIỀU HÒA SẠCH.<br>MÁY CHẠY ÊM, MÁT SÂU.
+    </div>
+    <div class="check-list">
+      <div class="check-item">
+        <span class="check-icon">✓</span> Xịt rửa dàn lạnh, sạch bụi bẩn, khử nấm mốc
+      </div>
+      <div class="check-item">
+        <span class="check-icon">✓</span> Vệ sinh dàn nóng, thông thoáng quạt tản nhiệt
+      </div>
+      <div class="check-item">
+        <span class="check-icon">✓</span> Đo áp suất gas & kiểm tra dòng điện vận hành
+      </div>
+    </div>
+  </div>
+
+  <!-- Middle Info Block -->
+  <div class="service-badge-bar">
+    <div class="service-tag">
+      Thợ kỹ thuật địa phương tại Cẩm Phả
+      <span>● CÓ NGHỀ</span>
+    </div>
+    <div class="service-tag">
+      Bảo dưỡng điều hòa tận nơi chu đáo
+      <span>● TẬN NHÀ</span>
+    </div>
+  </div>
+
+  <!-- Bottom CTA -->
+  <div class="cta-bar">
+    <div class="cta-left">
+      <div class="cta-sub">VIỆC KỸ THUẬT, CÓ THỢ ĐẤT MỎ</div>
+      <div class="cta-action">CẦN THỢ? <span>GỌI NGAY</span></div>
+    </div>
+    <div class="cta-phone-btn">
+      <span class="phone-label">HOTLINE</span>
+      <span class="phone-number">0888 942 247</span>
+    </div>
+  </div>
+</body>
+</html>

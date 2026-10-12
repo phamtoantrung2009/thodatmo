@@ -9,12 +9,12 @@ Keep §0 under 15 lines. Specs for each task are in `AGENTS.md` §7.
 
 - Last updated: 2026-10-12 · by: Gemini Flash
 - Last model: Gemini Flash
-- CURRENT TASK: MVP build completed & QA passed
+- CURRENT TASK: T05e Điện lạnh ad set KHÔNG ẢNH (3 concepts × 3 ratios = 9 PNGs READY, copy pack, ad rules)
 - STATUS: DONE
-- NEXT ACTION: Trung shoots real photos per copy/photo-shotlist.md, sets up Zalo OA, creates Facebook page Thợ Đất Mỏ, and publishes!
+- NEXT ACTION: Trung rebrands Facebook page cũ sang Thợ Đất Mỏ, chạy test ad set N1-N3 theo copy/ad-test-rules.md và copy/ad-ready-text.md, thỏa thuận rõ tỷ lệ chia với thợ (Q9).
 - Files in progress: none
-- Do not redo: All MVP tasks (T00, T01, T02, T07, T04, T05a, T08, T05b, T05c, T05d, T06a, T06b) are completed and QA passed.
-- Blockers: Waiting for Trung's real photos to swap placeholder slots before running paid ads.
+- Do not redo: All MVP tasks (T00, T01, T02, T07, T04, T05a, T08, T05b, T05c, T05d, T05e, T06a, T06b) are completed and QA passed.
+- Blockers: None for test ads N1-N3 (chạy được ngay). Real photos still needed for round 2 (C1-C3 and site photo slots).
 
 ---
 
@@ -30,6 +30,7 @@ Keep §0 under 15 lines. Specs for each task are in `AGENTS.md` §7.
 - [x] T05b Điện lạnh ad concept 1 (3 ratios, PREVIEW)
 - [x] T05c Điện lạnh ad concept 2 (3 ratios, PREVIEW)
 - [x] T05d Điện lạnh ad concept 3 (3 ratios, PREVIEW)
+- [x] T05e Điện lạnh ad set KHÔNG ẢNH (3 concepts N1-N3 × 3 ratios = 9 PNGs READY, copy pack, ad rules)
 - [x] T06a Landing page: structure + hero + call bar (optional for first ad test)
 - [x] T06b Landing page: remaining sections + QA
 - [x] MVP QA pass and report to Trung
@@ -48,6 +49,7 @@ Keep §0 under 15 lines. Specs for each task are in `AGENTS.md` §7.
 - 2026-10-11 · Badge/avatar only from an official badge asset; if missing, log it and use a TEMP avatar from the unmodified logo
 - 2026-10-11 · Display font: TO BE DECIDED in T02 (Anton or Oswald 700; Bebas Neue rejected for Vietnamese coverage)
 - 2026-10-12 · Display font: OSWALD BOLD 700 chosen as primary display font (Anton as alternate ultra-condensed); BE VIETNAM PRO (400, 700) for body. Glyph benchmark 02-glyph-test.png verified diacritics PASS with zero tofu/fallback.
+- 2026-10-12 · Test ads đầu chạy bằng creative không ảnh; ảnh thật thay ở vòng 2.
 
 ---
 
@@ -56,6 +58,7 @@ Keep §0 under 15 lines. Specs for each task are in `AGENTS.md` §7.
 Confirmed inputs:
 - Hotline: 0888 942 247 · Domain: datmo.io.vn · Market: Cẩm Phả, Quảng Ninh
 - Role: coordinator who dispatches jobs to technician friends (not "our own team")
+- Thỏa thuận chia 30-70 bằng miệng với thợ, bên nào 30 bên nào 70 CHƯA rõ, không đoán.
 
 Claims status (use in finished copy only when CONFIRMED):
 
@@ -83,6 +86,7 @@ Claims status (use in finished copy only when CONFIRMED):
 - Q6 Who shoots the real photos, and when? See `copy/photo-shotlist.md` after T05a.
 - Q7 (T00) Does a vector logo source (.svg/.ai/.eps/.pdf) exist anywhere? If yes, send it before T01. → **ANSWERED: No vector source exists (2026-10-12)**
 - Q8 (T01) Missing variants: stacked layout and wordmark-only do not exist in the source sheet. Does Trung have these, or should they be commissioned? → **ANSWERED: defer (2026-10-12)**
+- Q9 Terms with the Điện lạnh technician(s): commission split, who collects payment, who handles warranty/complaints, response time, working hours, service area. Their answers decide which claims in §3 can become CONFIRMED.
 
 ---
 
@@ -139,6 +143,17 @@ Status values: READY (usable as-is) / PREVIEW (placeholders or unconfirmed claim
 | `reports/site-mobile-390px.png` | DONE | Mobile screenshot QA (390px full page) |
 | `reports/site-mobile-360px.png` | DONE | Mobile viewport QA (360px) |
 | `reports/site-mobile-430px.png` | DONE | Mobile viewport QA (430px) |
+| `exports/THO-DAT-MO_AD_N1_1x1_1080x1080_v01.png` | READY | Ad N1 (Problem angle) 1:1, no-photo industrial bold card, diacritics PASS, hotline checked |
+| `exports/THO-DAT-MO_AD_N1_4x5_1080x1350_v01.png` | READY | Ad N1 (Problem angle) 4:5, mobile feed ratio, diacritics PASS, hotline checked |
+| `exports/THO-DAT-MO_AD_N1_9x16_1080x1920_v01.png` | READY | Ad N1 (Problem angle) 9:16, stories/reels safe zone verified, hotline checked |
+| `exports/THO-DAT-MO_AD_N2_1x1_1080x1080_v01.png` | READY | Ad N2 (Local angle) 1:1, Cẩm Phả wards list, no unconfirmed claims, hotline checked |
+| `exports/THO-DAT-MO_AD_N2_4x5_1080x1350_v01.png` | READY | Ad N2 (Local angle) 4:5, mobile feed ratio, diacritics PASS, hotline checked |
+| `exports/THO-DAT-MO_AD_N2_9x16_1080x1920_v01.png` | READY | Ad N2 (Local angle) 9:16, stories/reels safe zone verified, hotline checked |
+| `exports/THO-DAT-MO_AD_N3_1x1_1080x1080_v01.png` | READY | Ad N3 (Maintenance angle) 1:1, maintenance checklist, diacritics PASS, hotline checked |
+| `exports/THO-DAT-MO_AD_N3_4x5_1080x1350_v01.png` | READY | Ad N3 (Maintenance angle) 4:5, mobile feed ratio, diacritics PASS, hotline checked |
+| `exports/THO-DAT-MO_AD_N3_9x16_1080x1920_v01.png` | READY | Ad N3 (Maintenance angle) 9:16, stories/reels safe zone verified, hotline checked |
+| `copy/ad-ready-text.md` | READY | 3 headlines + 3 primary texts (<=3 lines) for N1/N2/N3 ready to paste into Ads Manager |
+| `copy/ad-test-rules.md` | READY | Test ad rules (run length, budget, kill/scale criteria, metrics for ad-tracker.csv) |
 
 ---
 
@@ -151,3 +166,5 @@ Status values: READY (usable as-is) / PREVIEW (placeholders or unconfirmed claim
 - 2026-10-12 · Gemini Flash · T05b/c/d done. 3 ad concepts (9 preview PNGs across 1:1, 4:5, 9:16) completed with CSS-driven photo slots.
 - 2026-10-12 · Gemini Flash · T06a & T06b done. site/index.html completed with full sections (Hero, 7 Services with SVG icons, Trust, Process, Final CTA, Sticky call bar). Size 34.7KB (budget <=150KB). Responsive tested at 360/390/430px & desktop.
 - 2026-10-12 · Gemini Flash · MVP QA pass completed. Entire MVP kit (T00->T08) ready. Real photos from technicians will unblock READY TO RUN status for ads.
+- 2026-10-12 · Claude · Reviewed the handoff. Fixed NEXT ACTION (rebrand existing page). Added Q9.
+- 2026-10-12 · Gemini Flash · T05e done. 3 no-photo ad concepts (N1 problem, N2 local, N3 maintenance) x 3 ratios = 9 PNGs READY (v01). copy/ad-ready-text.md and copy/ad-test-rules.md written. No unconfirmed claims used. Ready to test ads.
