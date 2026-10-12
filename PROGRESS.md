@@ -9,11 +9,11 @@ Keep §0 under 15 lines. Specs for each task are in `AGENTS.md` §7.
 
 - Last updated: 2026-10-12 · by: Gemini Flash
 - Last model: Gemini Flash
-- CURRENT TASK: T12a — Ảnh tổng hợp toàn bộ dịch vụ OV1 (3 ratios: 1:1, 4:5, 9:16)
-- STATUS: in progress
-- NEXT ACTION: Tạo src/ads/concept_ov1_1x1.html, 4x5.html, 9x16.html và xuất PNG OV1.
-- Files in progress: src/ads/concept_ov1_*.html
-- Do not redo: T00-T11
+- CURRENT TASK: T06c — Tối ưu site/index.html (Hero Camera/IT, sạch claim, mobile pass)
+- STATUS: done
+- NEXT ACTION: Chờ Trung kiểm tra và phê duyệt. Toàn bộ tài nguyên MVP, ad creatives (K1/K2, M1/M2, W1, D1, S1, OV1) và landing page site/index.html đã hoàn tất sẵn sàng.
+- Files in progress: (không có)
+- Do not redo: T00-T12, T06c
 - Blockers: Không có blocker.
 
 ---
@@ -33,6 +33,7 @@ Keep §0 under 15 lines. Specs for each task are in `AGENTS.md` §7.
 - [x] T05e Điện lạnh ad set KHÔNG ẢNH (3 concepts N1-N3 × 3 ratios = 9 PNGs v01 & v02 PREVIEW chờ duyệt, copy pack, ad rules)
 - [x] T06a Landing page: structure + hero + call bar (optional for first ad test)
 - [x] T06b Landing page: remaining sections + QA
+- [x] T06c Landing page: tối ưu Hero Camera/IT, sạch 100% claim cấm, mobile 390px above-the-fold, SEO & perf
 - [x] MVP QA pass and report to Trung
 - [x] T10 Camera ads K1/K2 (6 PNGs READY, copy bank + shotlist done)
 - [x] T10-IT: IT/Máy tính ads M1/M2 (7 PNGs READY, gồm M1 4:5 v02 cân đối)
@@ -40,6 +41,7 @@ Keep §0 under 15 lines. Specs for each task are in `AGENTS.md` §7.
 - [x] T11b Sửa chữa điện nước: ad D1 (3 PNGs READY, "Thợ Đất Mỏ kết nối thợ địa phương")
 - [x] T11c Điện mặt trời: ad S1 (3 PNGs READY, "kết nối thợ địa phương", không hứa liều)
 - [x] T11d Tài nguyên bổ trợ: copy bank + 15 bài post-pack nuôi page + photo shotlist an toàn
+- [x] T12 Ảnh tổng hợp toàn bộ dịch vụ OV1: 3 PNGs READY (1:1, 4:5, 9:16) + 8 carousel slides 4:5 READY
 - T03 icons: just-in-time inside T05/T06/T11 (inline SVGs cho toàn bộ dịch vụ)
 - T09 DEFERRED, do not start unless Trung asks
 
@@ -218,7 +220,8 @@ Status values: READY (usable as-is) / PREVIEW (placeholders or unconfirmed claim
 | `exports/THO-DAT-MO_AD_C3_1x1_1080x1080_PREVIEW.png` | PREVIEW | Ad C3 (Maintenance angle) 1:1, CSS-driven photo slot, verified diacritics |
 | `exports/THO-DAT-MO_AD_C3_4x5_1080x1350_PREVIEW.png` | PREVIEW | Ad C3 (Maintenance angle) 4:5 mobile feed, CSS-driven photo slot |
 | `exports/THO-DAT-MO_AD_C3_9x16_1080x1920_PREVIEW.png` | PREVIEW | Ad C3 (Maintenance angle) 9:16 story/reels, critical text inside safe zone |
-| `site/index.html` | READY | Landing page đơn trang (34.7 KB), Hero điện lạnh, 7 dịch vụ + inline SVG, 4 bước, sticky bottom call bar, tracking slots, SEO/OG meta |
+| `site/index.html` | READY | Landing page tối ưu (33.4 KB <=150KB), Hero Camera/IT, 6 dịch vụ chuẩn ALLOWED PHRASES, sạch 100% claim cấm, nút gọi tel:0888942247 + data-event, og:image OV1 1x1, LocalBusiness schema |
+| `reports/site_mobile_390px.png` | DONE | Mobile screenshot QA (390px): Hero + nút gọi thấy không cần cuộn (above-the-fold), chữ >=16px, vùng bấm >=48px, sticky bar không che đáy |
 | `reports/site-desktop.png` | DONE | Desktop screenshot QA (1280px) |
 | `reports/site-mobile-390px.png` | DONE | Mobile screenshot QA (390px full page) |
 | `reports/site-mobile-360px.png` | DONE | Mobile viewport QA (360px) |
@@ -291,3 +294,6 @@ Status values: READY (usable as-is) / PREVIEW (placeholders or unconfirmed claim
 - 2026-10-12 · Gemini Flash · T10-IT: Hoàn tất 6 template M1 & M2 (1:1, 4:5, 9:16). Xuất 6 PNG v01. QA pass: safe zone 9:16 chuẩn (y=280→1230), font>=26px, không đỏ, diacritics chuẩn, hotline 0888 942 247. Tổng cộng 12 ad creatives Camera + IT sẵn sàng ở PREVIEW.
 - 2026-10-12 · Gemini Flash · Tinh gọn quy trình: Sửa AGENTS.md O4 (bỏ Whitelist, xác nhận phạm vi Camera/IT). Kiểm 4 điều cho 12 ảnh K/M -> chuyển READY. Cân lại M1 4:5 xuất v02 READY. Cập nhật ad-test-rules.md ngân sách 300k (20 ngày tuần tự K1->M1) và checklist 75k. Q10 không chặn Camera/IT. Không đụng landing page.
 - 2026-10-12 · Gemini Flash · T11 hoàn thành toàn bộ: 3 ad concepts W1, D1, S1 × 3 tỉ lệ = 9 PNGs READY (4 điều pass, 9:16 safe zone chuẩn). Tạo xong ad-ready-text-wifi-dien-nuoc-solar.md, post-pack.md (15 bài đăng page kèm gợi ý ảnh), photo-shotlist-3-services.md (15 góc chụp an toàn). Git commit sạch sẽ sau từng dịch vụ.
+- 2026-10-12 · Gemini Flash · T12 done: OV1 tổng hợp 6 dịch vụ — 3 PNGs (1:1, 4:5, 9:16 v01 READY) + 8 carousel slides 4:5. 9:16 safe zone chuẩn (logo/tiêu đề/hotline y=280→1230, dưới 1230 để trống). Hotline PASS, no red, diacritics PASS. copy/ad-ready-text-overview.md viết sẵn cho bài tổng hợp.
+- 2026-10-12 · Gemini Flash · QA bằng Python Pillow (đo pixel thật): OV1 9:16 = y=280→1229 ✔; OV1 4:5 = y=64→1285 ✔; OV1 1:1 = y=64→1015 ✔. copy/overview-post.md + facebook-services-list.md đủ 6 dịch vụ. facebook-about.md và gbp.md đồng bộ 6 dịch vụ.
+- 2026-10-12 · Gemini Flash · T06c done: Hero chuyển sang Camera/IT, 6 dịch vụ chuẩn ALLOWED PHRASES, sạch 100% claim (báo giá/bảo hành/24-7/miễn phí). Mobile 390px verify above-the-fold nút gọi thấy ngay. File 33.4KB, preload fonts, LocalBusiness schema, og:image OV1.
