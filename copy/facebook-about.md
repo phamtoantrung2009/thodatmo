@@ -18,9 +18,9 @@ Tài liệu chuẩn hóa thông tin để Trung cập nhật khi đổi tên (re
 
 ## 2. Giới thiệu ngắn / Tiểu sử (Bio — Giới hạn 255 ký tự)
 
-> Đầu mối kết nối thợ kỹ thuật tại Cẩm Phả: Điều hòa, Camera, Điện nước, Wi-Fi, Máy tính. Xử lý tận nơi, báo giá rõ ràng. Hotline: 0888 942 247.
+> Thợ Đất Mỏ nhận các việc kỹ thuật tại Cẩm Phả: Camera, Máy tính & PC, Wi-Fi & mạng, Điện nước, Điện mặt trời, Điều hòa. Hotline: 0888 942 247.
 
-- **Độ dài thực tế:** 152 ký tự (nằm trong khoảng tối ưu 100–160 ký tự, hiển thị trọn vẹn trên app Facebook mobile không bị nút "Xem thêm" che).
+- **Độ dài thực tế:** 153 ký tự (hiển thị trọn vẹn trên app Facebook mobile không bị nút "Xem thêm" che).
 
 ---
 
@@ -28,18 +28,18 @@ Tài liệu chuẩn hóa thông tin để Trung cập nhật khi đổi tên (re
 
 **THỢ ĐẤT MỎ — VIỆC KỸ THUẬT, CÓ THỢ ĐẤT MỎ**
 
-Thợ Đất Mỏ là đầu mối điều phối dịch vụ kỹ thuật tại chỗ, chuyên kết nối người dân và hộ kinh doanh tại Cẩm Phả (Quảng Ninh) với những thợ địa phương lành nghề, có kinh nghiệm thực tế.
-
-Chúng tôi hỗ trợ xử lý tận nơi các sự cố và nhu cầu kỹ thuật thường gặp:
-- **Điện lạnh:** Vệ sinh, bảo dưỡng, nạp gas, xử lý điều hòa chảy nước, không mát.
-- **Camera quan sát:** Khảo sát, lắp đặt, sửa chữa camera an ninh gia đình, cửa hàng.
-- **Điện & Nước:** Xử lý chập điện, nhảy aptomat, rò rỉ đường ống, thay thế thiết bị điện nước.
-- **Máy tính & Mạng Wi-Fi:** Khắc phục sự cố mạng chập chờn, cài đặt máy tính tận nhà.
+Thợ Đất Mỏ nhận các việc kỹ thuật tại Cẩm Phả, hỗ trợ xử lý tận nơi cho hộ gia đình và cơ sở kinh doanh:
+- **Camera:** Lắp camera tận nơi.
+- **Máy tính & PC:** Cài đặt phần mềm • Lắp ráp PC • Tư vấn cấu hình máy tính.
+- **Wi-Fi & mạng:** Lắp đặt Wi-Fi, mạng tận nơi.
+- **Điện nước:** Sửa chữa điện nước gia đình tận nơi.
+- **Điện mặt trời:** Lắp đặt hệ thống điện mặt trời.
+- **Điều hòa:** Sửa chữa điều hòa tận nơi.
 
 **Nguyên tắc làm việc:**
-1. Thợ kỹ thuật địa phương, thông thạo địa bàn Cẩm Phả.
-2. Kiểm tra thực tế và báo giá rõ ràng trước khi triển khai.
-3. Nghiệm thu vận hành cẩn thận, có dán tem bảo hành và lập phiếu bàn giao.
+1. Thợ địa phương có nghề, thông thạo địa bàn Cẩm Phả.
+2. Kiểm tra thực tế và báo giá trước khi triển khai.
+3. Nghiệm thu cẩn thận, lập phiếu bàn giao sau khi hoàn thành.
 
 ---
 

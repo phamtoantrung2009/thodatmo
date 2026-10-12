@@ -25,9 +25,9 @@ Tài liệu chuẩn bị để Trung tạo hoặc tối ưu hồ sơ **THỢ Đ�
 
 ## 3. Mô tả doanh nghiệp (Business Description — Tối đa 750 ký tự)
 
-> Thợ Đất Mỏ là đầu mối kết nối dịch vụ kỹ thuật tại Cẩm Phả, Quảng Ninh. Chúng tôi kết nối khách hàng với các thợ kỹ thuật lành nghề tại địa phương, xử lý tận nơi nhanh chóng các hạng mục: sửa chữa, vệ sinh và nạp gas điều hòa; lắp đặt camera an ninh gia đình, cửa hàng; khắc phục sự cố điện chập, rò rỉ nước; sửa máy tính và cấu hình mạng Wi-Fi tại nhà. Thợ Đất Mỏ cam kết kiểm tra đúng bệnh, báo giá rõ ràng trước khi thi công, dán tem bảo hành và lập phiếu bàn giao đầy đủ sau khi hoàn thành. Cần thợ kỹ thuật tại Cẩm Phả, liên hệ ngay hotline: 0888 942 247.
+> Thợ Đất Mỏ nhận các việc kỹ thuật tại Cẩm Phả, Quảng Ninh. Hỗ trợ xử lý tận nơi nhanh chóng các hạng mục: Lắp camera tận nơi; Cài đặt phần mềm, lắp ráp PC, tư vấn cấu hình máy tính; Lắp đặt Wi-Fi, mạng tận nơi; Sửa chữa điện nước gia đình tận nơi; Lắp đặt hệ thống điện mặt trời; Sửa chữa điều hòa tận nơi. Thợ Đất Mỏ cam kết kiểm tra thực tế, báo giá rõ ràng trước khi thi công và lập phiếu bàn giao đầy đủ sau khi hoàn thành. Cần thợ kỹ thuật tại Cẩm Phả, liên hệ ngay hotline: 0888 942 247.
 
-- **Độ dài thực tế:** 588 ký tự (dưới giới hạn 750 ký tự của Google, chứa đầy đủ từ khóa dịch vụ và địa bàn Cẩm Phả).
+- **Độ dài thực tế:** 497 ký tự (dưới giới hạn 750 ký tự của Google, chứa đầy đủ từ khóa dịch vụ và địa bàn Cẩm Phả).
 
 ---
 
@@ -43,20 +43,12 @@ Tài liệu chuẩn bị để Trung tạo hoặc tối ưu hồ sơ **THỢ Đ�
 
 ## 5. Danh sách dịch vụ cụ thể trên GBP (Services Setup)
 
-1. **Sửa chữa & Bảo dưỡng Điều hòa:**
-   - Vệ sinh máy lạnh / điều hòa treo tường
-   - Đo áp suất gas & nạp gas bổ sung
-   - Xử lý điều hòa chảy nước, kêu to, kém mát
-2. **Lắp đặt & Sửa Camera quan sát:**
-   - Lắp đặt camera Wi-Fi gia đình
-   - Thi công camera có dây cho cửa hàng, nhà xưởng
-   - Cài đặt xem camera từ xa trên điện thoại
-3. **Sửa chữa Điện nước tại nhà:**
-   - Xử lý aptomat nhảy liên tục, chập điện
-   - Sửa rò rỉ ống nước, thay van vòi, phao bồn nước
-4. **Máy tính & Mạng Internet:**
-   - Cài đặt máy tính, xử lý máy tính không lên nguồn
-   - Khắc phục sự cố mạng Wi-Fi chập chờn, đi dây mạng nội bộ
+1. **Camera:** Lắp camera tận nơi
+2. **Máy tính & PC:** Cài đặt phần mềm • Lắp ráp PC • Tư vấn cấu hình máy tính
+3. **Wi-Fi & mạng:** Lắp đặt Wi-Fi, mạng tận nơi
+4. **Điện nước:** Sửa chữa điện nước gia đình tận nơi
+5. **Điện mặt trời:** Lắp đặt hệ thống điện mặt trời
+6. **Điều hòa:** Sửa chữa điều hòa tận nơi
 
 ---
 
