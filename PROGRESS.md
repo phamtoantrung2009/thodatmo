@@ -9,12 +9,12 @@ Keep §0 under 15 lines. Specs for each task are in `AGENTS.md` §7.
 
 - Last updated: 2026-10-12 · by: Gemini Flash
 - Last model: Gemini Flash
-- CURRENT TASK: Review lần 3 — Áp dụng cơ chế ALLOWED PHRASES, chuyển N1/N2/N3 về PREVIEW, rà soát chuỗi chờ Trung duyệt
-- STATUS: waiting for Trung approval
-- NEXT ACTION: Chờ Trung duyệt danh sách chuỗi ngoài ALLOWED PHRASES của N1/N2, và xác nhận phạm vi kỹ thuật của N3 trước khi xuất bản tiếp theo.
+- CURRENT TASK: Test ads Camera & IT — 12 PNGs READY TO RUN
+- STATUS: READY TO RUN (Trung tự chạy ad theo ad-test-rules.md)
+- NEXT ACTION: Trung nạp ngân sách chạy tuần tự: ngày 1–10 Camera K1 (~15.000đ/ngày), ngày 11–20 IT M1 (~15.000đ/ngày). Ghi nhận mỗi liên hệ vào ops/leads.csv. Không đụng landing page.
 - Files in progress: none
-- Do not redo: T00-T08, T05e v01 & v02. Không tạo v03 cho N3 cho tới khi Trung xác nhận.
-- Blockers: Chờ Trung xác nhận danh sách chuỗi ngoài ALLOWED PHRASES.
+- Do not redo: T00-T08, T05e, Camera K1/K2, IT M1/M2
+- Blockers: Không có blocker cho Camera/IT. (Q10 chỉ liên quan N1/N2 Điện lạnh đã tạm dừng, không chặn Camera/IT).
 
 ---
 
@@ -34,6 +34,8 @@ Keep §0 under 15 lines. Specs for each task are in `AGENTS.md` §7.
 - [x] T06a Landing page: structure + hero + call bar (optional for first ad test)
 - [x] T06b Landing page: remaining sections + QA
 - [x] MVP QA pass and report to Trung
+- [x] T10 Camera ads K1/K2 (6 PNGs READY, copy bank + shotlist done)
+- [x] T10-IT: IT/Máy tính ads M1/M2 (7 PNGs READY, gồm M1 4:5 v02 cân đối)
 - T03 icons: just-in-time inside T05/T06 (done: inline SVGs for all services)
 - T09 DEFERRED, do not start unless Trung asks
 
@@ -53,6 +55,9 @@ Keep §0 under 15 lines. Specs for each task are in `AGENTS.md` §7.
 - 2026-10-12 · N2 tách nhãn 'TẠI CẨM PHẢ' riêng khỏi tên thương hiệu; xóa toàn bộ danh sách phường, xóa 2 nút chưa xác nhận (bảo dưỡng máy, nạp bổ sung gas).
 - 2026-10-12 · Cả 3 tỷ lệ 9:16 cố định nội dung trong khoảng y=280→1230px, lề trái/phải 70px, dưới y=1230px để trống hoàn toàn cho UI Stories/Reels.
 - 2026-10-12 · Đổi cơ chế kiểm soát claim sang danh sách đóng ALLOWED PHRASES; mọi câu ngoài bảng đều là CẦN DUYỆT. N3 tạm dừng ở PREVIEW (không xuất v03 đến khi xác nhận thợ).
+- 2026-10-12 · Chuyển trọng tâm sang Camera + IT (Trung tự làm); Điện lạnh SEASONAL-PAUSED (mùa lạnh + Trung chỉ hưởng 30%).
+- 2026-10-12 · Camera K1 (problem: CẦN LẮP CAMERA?) và K2 (local: LẮP CAMERA THỢ ĐẤT MỎ NHẬN.) — 6 PNGs xuất xong, QA pass, status PREVIEW.
+- 2026-10-12 · IT / Máy tính M1 (problem: CẦN LẮP RÁP PC?) và M2 (local/skills: CÀI ĐẶT PHẦN MỀM.) — 6 PNGs xuất xong, QA pass (safe zone 9:16 y=280→1230, font>=26px, no red), status PREVIEW.
 
 ---
 
@@ -152,7 +157,7 @@ Claims status (use in finished copy only when CONFIRMED):
 - Q7 (T00) Does a vector logo source (.svg/.ai/.eps/.pdf) exist anywhere? If yes, send it before T01. → **ANSWERED: No vector source exists (2026-10-12)**
 - Q8 (T01) Missing variants: stacked layout and wordmark-only do not exist in the source sheet. Does Trung have these, or should they be commissioned? → **ANSWERED: defer (2026-10-12)**
 - Q9 Terms with the Điện lạnh technician(s): commission split, who collects payment, who handles warranty/complaints, response time, working hours, service area. Their answers decide which claims in §3 can become CONFIRMED.
-- Q10 (Review 3): Duyệt các chuỗi chữ ngoài ALLOWED PHRASES:
+- Q10 (Review 3): Duyệt các chuỗi chữ ngoài ALLOWED PHRASES: *(Lưu ý: Chỉ áp dụng cho bộ Điện lạnh N1/N2/N3 đã tạm dừng theo mùa, KHÔNG CHẶN Camera & IT)*
   1. Cho phép thêm tag "CẨM PHẢ • QUẢNG NINH" vào ALLOWED PHRASES không?
   2. Cho phép câu giải thích của N2: "Kiểm tra sự cố tận nơi, xử lý đúng bệnh điều hòa [tại địa bàn]." không?
   3. Cho phép các mô tả triệu chứng hỏng hóc ở N1 ("Bật lâu không lạnh, phả hơi nóng", "Chảy nước dàn lạnh, ướt tường nhà", "Cục nóng kêu to, rung lắc, tốn điện") không?
@@ -233,6 +238,21 @@ Status values: READY (usable as-is) / PREVIEW (placeholders or unconfirmed claim
 | `exports/THO-DAT-MO_AD_N3_9x16_1080x1920_v02.png` | PREVIEW | Ad N3 9:16 v02: Giữ PREVIEW, KHÔNG tạo v03 cho tới khi Trung xác nhận thợ làm các hạng mục bảo dưỡng |
 | `copy/ad-ready-text.md` | READY | 3 headlines + 3 primary texts for N1/N2/N3; N2 copy updated per independent review (bỏ 'khắp', 'có sẵn') |
 | `copy/ad-test-rules.md` | READY | Quy tắc test ad cập nhật: chỉ test N1/N2; kill #1 đủ 2 đk (>=150k VÀ >=3 ngày); scale tối đa 20% mỗi 2-3 ngày; câu mở + fb_unknown |
+| `copy/photo-shotlist-camera-it.md` | READY | Danh mục chụp ảnh cho Camera/IT (6 loại) |
+| `copy/ad-ready-text-camera-it.md` | READY | Copy bank Camera/IT: 6 headlines, 4 primary texts |
+| `exports/THO-DAT-MO_AD_K1_1x1_1080x1080_v01.png` | READY | Camera K1 (CẦN LẮP CAMERA?) 1:1 — 4 điều PASS (hotline đúng, ko hứa giá/bảo hành/thời gian/24-7/free, ko ảnh giả, ko màu đỏ) |
+| `exports/THO-DAT-MO_AD_K1_4x5_1080x1350_v01.png` | READY | Camera K1 4:5 — 4 điều PASS |
+| `exports/THO-DAT-MO_AD_K1_9x16_1080x1920_v01.png` | READY | Camera K1 9:16 — safe zone PASS (y=280→1230), 4 điều PASS |
+| `exports/THO-DAT-MO_AD_K2_1x1_1080x1080_v01.png` | READY | Camera K2 (LẮP CAMERA THỢ ĐẤT MỎ NHẬN.) 1:1 — 4 điều PASS |
+| `exports/THO-DAT-MO_AD_K2_4x5_1080x1350_v01.png` | READY | Camera K2 4:5 — 4 điều PASS |
+| `exports/THO-DAT-MO_AD_K2_9x16_1080x1920_v01.png` | READY | Camera K2 9:16 — safe zone PASS (y=280→1230), 4 điều PASS |
+| `exports/THO-DAT-MO_AD_M1_1x1_1080x1080_v01.png` | READY | IT M1 (CẦN LẮP RÁP PC?) 1:1 — 4 điều PASS |
+| `exports/THO-DAT-MO_AD_M1_4x5_1080x1350_v01.png` | READY | IT M1 4:5 v01 (giữ nguyên file gốc) — 4 điều PASS |
+| `exports/THO-DAT-MO_AD_M1_4x5_1080x1350_v02.png` | READY | IT M1 4:5 v02 (thẻ vàng cân đối, không khoảng trống) — 4 điều PASS |
+| `exports/THO-DAT-MO_AD_M1_9x16_1080x1920_v01.png` | READY | IT M1 9:16 — safe zone PASS (y=280→1230), 4 điều PASS |
+| `exports/THO-DAT-MO_AD_M2_1x1_1080x1080_v01.png` | READY | IT M2 (CÀI ĐẶT PHẦN MỀM.) 1:1 — 4 điều PASS |
+| `exports/THO-DAT-MO_AD_M2_4x5_1080x1350_v01.png` | READY | IT M2 4:5 — 4 điều PASS |
+| `exports/THO-DAT-MO_AD_M2_9x16_1080x1920_v01.png` | READY | IT M2 9:16 — safe zone PASS (y=280→1230), 4 điều PASS |
 
 ---
 
@@ -250,3 +270,6 @@ Status values: READY (usable as-is) / PREVIEW (placeholders or unconfirmed claim
 - 2026-10-12 · Gemini Flash · T05e polish per review: Sửa primary text N2 (bỏ 'khắp', 'có sẵn'). Đã view & QA độc lập 4 ảnh N2 4x5, N2 9x16, N3 4x5, N3 9x16 (safe zone, diacritics, hotline, contrast PASS). Sửa ad-test-rules.md (xóa giả định CPM, thay CPL công thức, bổ sung đo nguồn lead).
 - 2026-10-12 · Gemini Flash · T05e v02 hoàn tất: Sửa 9 template HTML nguồn, bỏ màu đỏ (#080808), tăng line-height tiêu đề 1.25, chữ phụ >=28px. Xuất 9 file v02. Đo tọa độ y 9:16 chính xác (logo 280-352, tiêu đề 488-708, hotline 1134-1210, CTA đáy 1230, dưới 1230 trống hoàn toàn, lề 70px). Đã mở kiểm tra trực quan 100% & 25% cả 9 file.
 - 2026-10-12 · Gemini Flash · Review 3: Sửa AGENTS.md O4 (bổ sung phạm vi dịch vụ, kết quả, định kỳ, icon khiên). Thêm bảng ALLOWED PHRASES vào PROGRESS.md §3. Cập nhật ad-test-rules.md (chỉ test N1/N2, kill #1 hai điều kiện, scale 20% mỗi 2-3 ngày, câu mở + fb_unknown). Đổi status N1, N2, N3 về PREVIEW; trích xuất và đối chiếu chuỗi N1/N2 chờ Trung duyệt.
+- 2026-10-12 · Gemini · T10 Camera: Tạo concept_k1 và concept_k2 (3 ratios mỗi bộ = 6 HTML template). Xuất 6 PNG v01. QA: diacritics PASS, hotline PASS, no red, 9:16 safe zone PASS (content bắt đầu y=280, kết thúc trước y=1230). Status = PREVIEW (chờ ảnh thật). Next: IT M1/M2.
+- 2026-10-12 · Gemini Flash · T10-IT: Hoàn tất 6 template M1 & M2 (1:1, 4:5, 9:16). Xuất 6 PNG v01. QA pass: safe zone 9:16 chuẩn (y=280→1230), font>=26px, không đỏ, diacritics chuẩn, hotline 0888 942 247. Tổng cộng 12 ad creatives Camera + IT sẵn sàng ở PREVIEW.
+- 2026-10-12 · Gemini Flash · Tinh gọn quy trình: Sửa AGENTS.md O4 (bỏ Whitelist, xác nhận phạm vi Camera/IT). Kiểm 4 điều cho 12 ảnh K/M -> chuyển READY. Cân lại M1 4:5 xuất v02 READY. Cập nhật ad-test-rules.md ngân sách 300k (20 ngày tuần tự K1->M1) và checklist 75k. Q10 không chặn Camera/IT. Không đụng landing page.

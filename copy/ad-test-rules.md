@@ -1,64 +1,46 @@
 # QUY TẮC ĐÁNH GIÁ & VẬN HÀNH TEST ADS THỢ ĐẤT MỎ
 
-Tài liệu hướng dẫn thực tế cho Trung khi test 2 concept ads không ảnh (N1, N2) cho dịch vụ Điện lạnh tại Cẩm Phả. *(Concept N3 tạm dừng chờ Trung xác nhận danh mục thợ làm).*
+Tài liệu vận hành test ad gọn nhẹ cho Trung với ngân sách tối thiểu, đo lường trực tiếp cuộc gọi/tin nhắn tại Cẩm Phả.
 
 ---
 
-## 1. NGUYÊN TẮC TEST BAN ĐẦU
-- **Mục tiêu số 1:** Tìm ra creative mang về cuộc gọi/tin nhắn đầu tiên với chi phí thấp nhất. Tốc độ ra tiền thắng sự hoàn hảo.
-- **Chỉ test N1 và N2:** Chạy song song 2 concept N1 (sự cố) và N2 (thợ địa phương). N3 chờ xác nhận.
-- **Không vội tắt sớm:** Thuật toán quảng cáo cần thời gian máy học để phân phối đến đúng đối tượng có nhu cầu tại địa bàn Cẩm Phả.
+## 1. KẾ HOẠCH NGÂN SÁCH & LỊCH CHẠY TUẦN TỰ
+
+- **Tổng ngân sách dự kiến:** 300.000 VNĐ (Trần tối đa: 500.000 VNĐ).
+- **Tổng thời gian:** 20 ngày, chạy tuần tự từng dịch vụ:
+  - **Giai đoạn 1 (Ngày 1 – Ngày 10):** Chạy **Camera K1** (~15.000 VNĐ/ngày).
+  - **Giai đoạn 2 (Ngày 11 – Ngày 20):** Chạy **IT / Máy tính M1** (~15.000 VNĐ/ngày).
+- **Mục tiêu cốt lõi:** Đo chi phí thực tế trên mỗi liên hệ (Cost Per Lead). Tốc độ có khách thật và đo đạc thực tế quan trọng hơn mọi lý thuyết.
 
 ---
 
-## 2. TIÊU CHÍ ĐÁNH GIÁ CHI TIẾT
+## 2. CHECKLIST KIỂM TRA KỸ THUẬT (KHI CHI ~75.000 ĐỒNG MÀ 0 HIỂN THỊ / 0 CLICK)
 
-### A. Thời gian chạy tối thiểu
-- **Tối thiểu 3 ngày liên tục** cho mỗi creative trước khi đưa ra bất kỳ kết luận nào.
-- Không tắt hoặc chỉnh sửa ad trong vòng 24–48 giờ đầu tiên.
-
-### B. Ngân sách chi tiêu tối thiểu trước khi kết luận
-- **Tối thiểu 150.000 VNĐ** cho mỗi creative trước khi đánh giá.
-
-### C. Khi nào TẮT quảng cáo (Kill Criteria)?
-Tắt creative ngay khi vi phạm một trong các điều kiện sau:
-1. **Không có phản hồi (Kill #1):** Phải thỏa mãn **đồng thời cả hai điều kiện**: Đã chi **≥ 150.000 VNĐ** VÀ đã chạy **≥ 3 ngày** mà đạt **0 cuộc gọi / 0 tin nhắn**. *(Thiếu một trong hai điều kiện thì không tắt sớm).*
-2. **Chi phí lead vượt ngưỡng trần (Kill #2):** Chi phí cho 1 cuộc gọi/tin nhắn (Cost Per Lead) vượt quá ngưỡng cho phép:  
-   `[CPL tối đa: chờ Trung xác nhận; công thức = lợi nhuận Trung trên 1 job × tỉ lệ chốt]`  
-   *(Nếu chi phí cho 1 cuộc gọi cao hơn mức này thì chạy tiếp sẽ bị lỗ).*
-
-### D. Khi nào GIỮ và TĂNG NGÂN SÁCH (Scale Criteria)?
-- Creative mang về cuộc gọi/tin nhắn với chi phí nằm dưới ngưỡng CPL tối đa và thợ nhận việc hoàn thành có lãi.
-- **Tần suất & mức tăng:** Tăng ngân sách tối đa **~20% mỗi 2–3 ngày** (không tăng mỗi ngày), không nhân đôi ngân sách đột ngột tránh làm gãy phân phối của máy học.
+Nếu quảng cáo đã cắn khoảng 75.000 VNĐ (hoặc sau 3–4 ngày) mà ghi nhận **0 lượt hiển thị hoặc 0 lượt click**, kiểm tra ngay 3 điểm:
+1. **Trạng thái ad:** Chiến dịch có đang thực sự "Đang hoạt động" (Active) không, hay đang bị kẹt xét duyệt/tạm dừng?
+2. **Chính sách duyệt:** Ad có bị Facebook gắn cờ từ chối / hạn chế tài khoản không?
+3. **Cấu hình nút bấm:** Số hotline (`0888 942 247`), nút gọi điện (`tel:0888942247`) hoặc nút gửi tin nhắn Messenger đã cài đặt đúng chưa?
 
 ---
 
-## 3. ĐO NGUỒN CUỘC GỌI & GHI NHẬN `ops/leads.csv`
+## 3. GHI NHẬN LIÊN HỆ VÀO `ops/leads.csv`
 
-Khi khách gọi tới số hotline `0888 942 247`:
-1. **Hỏi thăm nguồn bằng câu mở:** Hỏi tự nhiên: *"Anh/chị biết số bên em từ đâu ạ?"*
-2. **Ghi vào cột `source` của `ops/leads.csv`:**
-   - Thấy quảng cáo sự cố máy không mát -> Ghi: `fb_ad_n1`
-   - Thấy quảng cáo thợ kỹ thuật Cẩm Phả -> Ghi: `fb_ad_n2`
-   - Nhớ là thấy trên Facebook nhưng không nhớ rõ bài nào -> Ghi: `fb_unknown`
-   - Khách vãng lai / người quen giới thiệu -> Ghi: `direct` hoặc `referral`
-   *(Lưu ý: `fb_ad_n3` tạm thời chưa dùng do N3 đang chờ xác nhận).*
-3. Điền đầy đủ các thông tin: ngày, dịch vụ, tên/SĐT khách, khu vực phường tại Cẩm Phả, hiện tượng hỏng.
+Mỗi khi có khách gọi hotline `0888 942 247` hoặc nhắn tin:
+1. **Hỏi thăm nguồn:** *"Anh/chị biết số bên em từ đâu ạ?"*
+2. **Ghi nhận ngay 1 dòng vào `ops/leads.csv`:**
+   - **`source`**: Ghi rõ nguồn (`fb_ad_k1`, `fb_ad_m1`, `fb_unknown`, `direct`, `referral`).
+   - **Khách hỏi gì:** Ghi rõ nhu cầu cụ thể vào cột `notes` (ví dụ: lắp 2 mắt camera gia đình, cài win máy bàn, tư vấn mua case đồ họa...).
+   - **`quote_vnd`**: Mức giá Trung báo cho khách.
+   - **`status`**: Chốt thành công (`won`) hay chưa chốt/từ chối (`lost`, `contacted`).
+   - **`final_vnd` & `profit_vnd`**: Doanh thu thực thu và lợi nhuận ròng của Trung.
+   - **`technician`**: Ghi `Trung` (Trung tự làm, không mất phí điều thợ).
 
 ---
 
-## 4. CÁC CHỈ SỐ BẮT BUỘC GHI VÀO `ops/ad-tracker.csv` MỖI NGÀY
+## 4. THEO DÕI HÀNG NGÀY TRONG `ops/ad-tracker.csv`
 
-Vào cuối mỗi ngày (hoặc sáng hôm sau), mở file `ops/ad-tracker.csv` và nhập chính xác một dòng dữ liệu cho mỗi chiến dịch/creative đang chạy:
-
-1. **`date`**: Ngày ghi nhận (định dạng `YYYY-MM-DD`, ví dụ: `2026-10-13`).
-2. **`campaign`**: Tên chiến dịch (ví dụ: `DL_N1_PROBLEM`, `DL_N2_LOCAL`, `DL_N3_MAINT`).
-3. **`service`**: Điền `Điện lạnh`.
-4. **`spend_vnd`**: Số tiền VNĐ quảng cáo đã chi tiêu thực tế trong ngày (lấy từ cột Amount Spent).
-5. **`impressions`**: Số lượt hiển thị.
-6. **`clicks`**: Số lượt nhấp.
-7. **`calls`**: Số cuộc gọi đổ về số hotline `0888 942 247` từ quảng cáo.
-8. **`leads`**: Tổng số liên hệ nhận được (calls + tin nhắn).
-9. **`jobs_won`**: Số job thực tế đã chốt thành công và dispatch cho bạn bè thợ đi làm.
-10. **`revenue_vnd`**: Doanh thu tổng từ khách hàng.
-11. **`profit_vnd`**: Lợi nhuận ròng thực nhận của Trung sau khi trừ tiền trả cho thợ và chi phí quảng cáo.
+Cuối mỗi ngày ghi nhận:
+- `spend_vnd`: Số tiền tiêu thực tế (~15.000đ).
+- `impressions`, `clicks`: Lượt hiển thị và click.
+- `calls`, `leads`: Số cuộc gọi và tin nhắn nhận được.
+- Chi phí mỗi liên hệ = `spend_vnd` / `leads`.

@@ -27,9 +27,9 @@ Trung uses free accounts. Quota can die at any moment and he will switch account
 
 ## 2. Project in 6 lines
 
-- THỢ ĐẤT MỎ is a local technical-service coordinator in Cẩm Phả, Quảng Ninh. Trung runs the ads and takes jobs, then dispatches them to friends who are technicians and earns commission/markup. He does not do the technical work himself.
-- One brand, no sub-brands. Services: **Sửa chữa** (điện, nước, điện lạnh, máy tính), **Lắp đặt** (camera, Wi-Fi/mạng, điện mặt trời), **Bảo trì** (điều hòa, camera, điện/nước).
-- Ad test order: Điện lạnh → Camera → Điện nước → Máy tính → Solar. **Start with Điện lạnh only.**
+- THỢ ĐẤT MỎ is a local technical service in Cẩm Phả, Quảng Ninh. Trung tự làm camera, cài đặt phần mềm, tư vấn cấu hình máy tính, lắp ráp PC; thứ tự test: Camera → IT; Điện lạnh (điều thợ, Trung hưởng 30%) hạ ưu tiên.
+- One brand, no sub-brands. Services: **Lắp đặt** (camera, Wi-Fi/mạng, điện mặt trời), **Sửa chữa / IT** (cài đặt phần mềm, tư vấn cấu hình, lắp ráp PC, điện, nước, điện lạnh), **Bảo trì** (camera, điều hòa, điện/nước).
+- Ad test order: Camera → IT (máy tính) → Điện lạnh (hạ ưu tiên) → Điện nước → Solar. **Start with Camera first.**
 - An existing Facebook page (~568 followers, has ad history) is being rebranded to "Thợ Đất Mỏ". Do not propose a new page. Old ads still running under the old page carry ANOTHER person's phone number; nothing you create may ever contain it.
 - Domain `datmo.io.vn`. Hotline `0888 942 247` (purchased). Zalo: not created yet.
 - Budget is minimal. Speed to the first paying customer beats polish. Build the MVP kit in §7 and nothing else until Trung says revenue exists.
@@ -58,7 +58,7 @@ The three guideline files total ~4,200 lines. Reading them all burns the quota. 
 ## 4. Brand digest (always apply)
 
 - **Name:** THỢ ĐẤT MỎ, always with full diacritics. Never: Thợ Mỏ, Đất Mỏ, Thợ Đất, DATMO, THO DAT MO.
-- **Positioning:** local technical-service hub (đầu mối) that connects customers with local technicians.
+- **Positioning:** local technical-service hub (đầu mối) that connects customers with local technicians, và trực tiếp thực hiện các dịch vụ kỹ thuật Camera & IT.
 - **Public lines:** Promise `Việc kỹ thuật, có Thợ Đất Mỏ.` · CTA line `Cần thợ? Gọi Thợ Đất Mỏ.` · optional descriptor `KỸ THUẬT TẬN NƠI • CẨM PHẢ • QUẢNG NINH`.
 - **Internal values** (not a customer-facing claim): THỰC TẾ • TIN CẬY • ĐỊA PHƯƠNG • CÓ NGHỀ.
 - **Palette (only these):** Mining Yellow `#FFD200` · Charcoal Black `#080808` · White `#FFFFFF` · Support Gray `#6B6B6B` (support only). Priority: black + yellow + white.
@@ -66,7 +66,7 @@ The three guideline files total ~4,200 lines. Reading them all burns the quota. 
 - **Type:** display = ultra-bold condensed sans (see override O1); body = Be Vietnam Pro. Max 2 families per layout. Never set long paragraphs in the display font.
 - **Shape:** bold geometric blocks, controlled rounding, industrial angled cuts. Yellow blocks may use subtle rounding.
 - **Photos:** real jobs, real technicians, real local places only.
-- **Voice:** short, direct, action-first, benefit-first. Good: `Điều hòa không mát? Gọi thợ.` / `Cần lắp camera? Thợ Đất Mỏ xử lý.` Bad: corporate brochure language ("giải pháp đột phá", "hệ sinh thái", "đẳng cấp 5 sao").
+- **Voice:** short, direct, action-first, benefit-first. Good: `Cần lắp camera? Gọi thợ.` / `Cần lắp ráp PC? Thợ Đất Mỏ xử lý.` Bad: corporate brochure language ("giải pháp đột phá", "hệ sinh thái", "đẳng cấp 5 sao").
 - **Contact format:** display `0888 942 247` (grouped 4-3-3, never glued), link `tel:0888942247`. Domain `datmo.io.vn`. No other phone number anywhere.
 - **Tone check:** the result must feel like "local technicians, real work, right here in the area", not "a pretty tech app".
 
@@ -79,11 +79,23 @@ The guideline files have known defects. Do not edit them. Follow this list inste
 - **O1 Fonts.** The guideline lists Bebas Neue first, but Bebas Neue as distributed on Google Fonts does not cover Vietnamese diacritics, and the brand name contains Ợ, Ấ, Ỏ. Use **Anton** or **Oswald 700** for display and **Be Vietnam Pro** for body. Decide in T02 by rendering the glyph test; any tofu box, fallback font or misplaced tone mark rejects that font. Self-host font files in `assets/fonts/` (all OFL).
 - **O2 Tagline.** The guideline calls two different lines "tagline". Resolved: customer-facing = the Promise and the CTA line (§4). The values line is internal and may appear only as an optional lock-up or footer line.
 - **O3 No false team claims.** The guideline's phrases "đội thợ thật" and "đội thợ địa phương có nghề" are an internal feeling test, not copy. Never write "đội thợ của chúng tôi", "nhân viên của chúng tôi", "công ty có X năm kinh nghiệm". Allowed: "thợ địa phương", "kết nối thợ", "có thợ tại khu vực".
-- **O4 Hotline, '247' và các claim cần xác nhận.** Hotline is `0888 942 247`; it replaces `[PHONE]`, `XXXXXXXX` and "SIM mới" everywhere. The ending 247 must not be marketed as 24/7. Do not write "24/7", "trực 24h", "có mặt ngay", "30 phút", "miễn phí khảo sát", "bảo hành X tháng", "báo giá rõ trước khi làm", any price/offer, hoặc bất kỳ claim nào về phạm vi dịch vụ cụ thể (xịt rửa, vệ sinh dàn nóng, đo/nạp gas, kiểm tra điện), kết quả/lợi ích (tiết kiệm điện, chạy êm, mát sâu, sạch mốc), chương trình lặp lại ("định kỳ") và icon gợi bảo đảm (khiên/shield) trừ khi được liệt kê là CONFIRMED trong `PROGRESS.md` §3 (hoặc nằm trong bảng ALLOWED PHRASES). Mọi câu/claim khác đều cần Trung xác nhận. Unconfirmed claims may appear in drafts only as `[CONFIRM: …]` and never inside exported images.
+- **O4 Hotline, '247' và các claim cần xác nhận.** Hotline is `0888 942 247`; it replaces `[PHONE]`, `XXXXXXXX` and "SIM mới" everywhere. The ending 247 must not be marketed as 24/7. Phạm vi tận nơi tại Cẩm Phả ĐÃ ĐƯỢC TRUNG XÁC NHẬN: lắp camera, cài đặt phần mềm, lắp ráp PC, tư vấn cấu hình máy tính (kể cả nhãn "Máy tính & PC tận nơi"). Còn cần Trung xác nhận mới dùng: giá, ưu đãi, bảo hành, thời gian có mặt, 24/7, miễn phí, kết quả/lợi ích (tiết kiệm điện...), chương trình định kỳ, dịch vụ ngoài phạm vi trên. Unconfirmed claims may appear in drafts only as `[CONFIRM: …]` and never inside exported images.
 - **O5 File names.** The master guideline is `THO-DAT-MO_BRAND_MASTER_GUIDELINE_v1_0.md`. The AI Skill's reference to `..._v1.0.md` and the guideline's §33 names (`BRAND-GUIDELINE.md` etc.) are wrong. Do not rename or move the originals; you may propose renames in `PROGRESS.md` §4.
 - **O6 Folder layout.** Ignore guideline §33's tree. Use the layout in T00. File naming for outputs: `THO-DAT-MO_[ASSET]_[PLATFORM]_[SIZE]_v01` (Design System §27).
 - **O7 Scope.** Brief §10 still rules: MVP first (Design System §38). Colors are now locked (the brief said "not fixed"). Uniform, vehicle, signage, extended icon sets, 10-folder brand kit and motion are deferred. Icons are drawn just-in-time (T03).
 - **O8 Real photos only.** No real job photos exist yet. Layouts that depend on proof (L03 Before/After, L04 Case Study, L06 Testimonial, S03, S05) are blocked until Trung supplies real photos. Everywhere else, use clearly labelled photo placeholders (gray block with the label `ẢNH THẬT: <what to shoot>`).
+- **O9 Dịch vụ Trung tự làm (Camera & IT).** Dịch vụ Trung tự làm dùng chữ trung tính "Thợ Đất Mỏ nhận …", cấm "kết nối thợ", "đội thợ", "đội ngũ của chúng tôi".
+
+---
+
+## 5.1 AD CREATIVE RULES (Lưu vĩnh viễn cho mọi ấn phẩm quảng cáo)
+
+1. **Safe zone 9:16 (Stories / Reels):** Trên canvas 1080×1920, toàn bộ nội dung quan trọng (logo, tiêu đề, hotline, CTA) phải nằm gọn trong khoảng `y = 280 → 1230px`, lề trái và phải `≥ 70px`. Dưới `y = 1230px` để trống hoàn toàn cho UI của nền tảng. Logo không bắt đầu trước `y = 280px`.
+2. **Không dùng màu đỏ:** Tuyệt đối không dùng màu đỏ (kể cả dấu X, icon cảnh báo). Dấu X dùng Charcoal Black `#080808` hoặc Support Gray `#6B6B6B`.
+3. **Cỡ chữ tối thiểu:** Chữ phụ tối thiểu `26px` ở canvas rộng 1080px; dải chữ nào nhỏ hơn 26px thì bỏ.
+4. **Quy tắc màu chữ xám:** Chữ xám `#6B6B6B` trên nền đen chỉ dùng cho chữ `≥ 28px`. Các chữ nhỏ hơn bắt buộc dùng màu trắng `#FFFFFF` để đảm bảo độ tương phản.
+5. **Line-height tiêu đề:** Tiêu đề 2 dòng bắt buộc tăng line-height (tối thiểu `1.2`) để dấu câu dòng dưới không chạm chân dòng trên, chấm dưới của dòng trên không chạm đầu dòng dưới.
+6. **Kiểm duyệt chữ (Whitelist):** Chỉ dùng các câu/từ nằm trong bảng ALLOWED PHRASES tại `PROGRESS.md` §3. Mọi câu khác đều phải gắn `[CẦN TRUNG DUYỆT]` và không xuất hiện trên ảnh xuất bản.
 
 ---
 
