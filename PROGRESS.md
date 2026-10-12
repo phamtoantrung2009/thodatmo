@@ -9,12 +9,12 @@ Keep §0 under 15 lines. Specs for each task are in `AGENTS.md` §7.
 
 - Last updated: 2026-10-12 · by: Gemini Flash
 - Last model: Gemini Flash
-- CURRENT TASK: T05e Hoàn tất xuất 9 ad v02 theo review ảnh (trích soát claim, safe zone 9:16 y=280-1230, font>=26px, bỏ màu đỏ)
-- STATUS: DONE
-- NEXT ACTION: Chờ Trung duyệt 9 ad v02 hoặc chỉ đạo task tiếp theo (T05b-d chuyển sang ảnh thật khi có ảnh, hoặc chuẩn bị ad copy / chiến dịch).
+- CURRENT TASK: Review lần 3 — Áp dụng cơ chế ALLOWED PHRASES, chuyển N1/N2/N3 về PREVIEW, rà soát chuỗi chờ Trung duyệt
+- STATUS: waiting for Trung approval
+- NEXT ACTION: Chờ Trung duyệt danh sách chuỗi ngoài ALLOWED PHRASES của N1/N2, và xác nhận phạm vi kỹ thuật của N3 trước khi xuất bản tiếp theo.
 - Files in progress: none
-- Do not redo: T00-T08, T05e v01 & v02.
-- Blockers: none.
+- Do not redo: T00-T08, T05e v01 & v02. Không tạo v03 cho N3 cho tới khi Trung xác nhận.
+- Blockers: Chờ Trung xác nhận danh sách chuỗi ngoài ALLOWED PHRASES.
 
 ---
 
@@ -30,7 +30,7 @@ Keep §0 under 15 lines. Specs for each task are in `AGENTS.md` §7.
 - [x] T05b Điện lạnh ad concept 1 (3 ratios, PREVIEW)
 - [x] T05c Điện lạnh ad concept 2 (3 ratios, PREVIEW)
 - [x] T05d Điện lạnh ad concept 3 (3 ratios, PREVIEW)
-- [x] T05e Điện lạnh ad set KHÔNG ẢNH (3 concepts N1-N3 × 3 ratios = 9 PNGs READY v01 & v02, copy pack, ad rules)
+- [x] T05e Điện lạnh ad set KHÔNG ẢNH (3 concepts N1-N3 × 3 ratios = 9 PNGs v01 & v02 PREVIEW chờ duyệt, copy pack, ad rules)
 - [x] T06a Landing page: structure + hero + call bar (optional for first ad test)
 - [x] T06b Landing page: remaining sections + QA
 - [x] MVP QA pass and report to Trung
@@ -52,6 +52,7 @@ Keep §0 under 15 lines. Specs for each task are in `AGENTS.md` §7.
 - 2026-10-12 · Test ads đầu chạy bằng creative không ảnh; ảnh thật thay ở vòng 2.
 - 2026-10-12 · N2 tách nhãn 'TẠI CẨM PHẢ' riêng khỏi tên thương hiệu; xóa toàn bộ danh sách phường, xóa 2 nút chưa xác nhận (bảo dưỡng máy, nạp bổ sung gas).
 - 2026-10-12 · Cả 3 tỷ lệ 9:16 cố định nội dung trong khoảng y=280→1230px, lề trái/phải 70px, dưới y=1230px để trống hoàn toàn cho UI Stories/Reels.
+- 2026-10-12 · Đổi cơ chế kiểm soát claim sang danh sách đóng ALLOWED PHRASES; mọi câu ngoài bảng đều là CẦN DUYỆT. N3 tạm dừng ở PREVIEW (không xuất v03 đến khi xác nhận thợ).
 
 ---
 
@@ -73,43 +74,70 @@ Claims status (use in finished copy only when CONFIRMED):
 | Warranty period per service | NOT CONFIRMED |
 | Any price or price range | NOT CONFIRMED |
 | Service area (phường/khu vực) and working hours | NOT CONFIRMED |
+| Phạm vi dịch vụ chi tiết (xịt rửa, vệ sinh dàn nóng, đo/nạp gas, kiểm tra điện) | NOT CONFIRMED |
+| Kết quả / cam kết lợi ích (tiết kiệm điện, chạy êm, mát sâu, sạch mốc) | NOT CONFIRMED |
+| Chương trình lặp lại ("định kỳ") | NOT CONFIRMED |
+| Icon gợi bảo đảm (khiên/shield) | NOT CONFIRMED |
 | Zalo link / address (for Google Business Profile) | NOT AVAILABLE |
 | Real job photos | NONE YET |
 
 ---
 
-### Bảng soát claim thực tế trích xuất từ 9 file HTML nguồn v02
+### BẢNG ALLOWED PHRASES (Danh sách câu được phép xuất hiện trên ad — Khởi tạo đóng)
 
-| File | Chuỗi chữ hiển thị trích xuất | Phân loại theo O3, O4 |
+*Mọi câu không có trong danh sách này = CẦN TRUNG XÁC NHẬN.*
+
+| STT | Chuỗi được phép | Ghi chú |
 |---|---|---|
-| `concept_n1_1x1.html`, `4x5.html`, `9x16.html` | "CẨM PHẢ • QUẢNG NINH" | Được phép (khu vực hoạt động xác nhận) |
-|  | "SỰ CỐ ĐIỀU HÒA • GỌI THỢ XỬ LÝ" | Được phép (mô tả dịch vụ) |
-|  | "ĐIỀU HÒA KHÔNG MÁT? GỌI THỢ ĐẤT MỎ." | Được phép (Promise & CTA brand) |
-|  | "✕ Bật lâu không lạnh, phả hơi nóng" | Được phép (triệu chứng kỹ thuật thực tế) |
-|  | "✕ Chảy nước dàn lạnh, ướt tường nhà" | Được phép (triệu chứng kỹ thuật thực tế) |
-|  | "✕ Cục nóng kêu to, rung lắc, tốn điện" | Được phép (triệu chứng kỹ thuật thực tế) |
-|  | "THỢ KỸ THUẬT TẠI CẨM PHẢ • KỸ THUẬT" | Được phép (theo O3: thợ địa phương) |
-|  | "XỬ LÝ SỰ CỐ ĐIỀU HÒA TẬN NƠI • TẬN NHÀ" | Được phép (phạm vi dịch vụ tận nơi) |
-|  | "CẦN THỢ? GỌI THỢ ĐẤT MỎ" | Được phép (CTA line chính thức) |
-|  | "0888 942 247" | Được phép (Hotline chính thức xác nhận) |
-| `concept_n2_1x1.html`, `4x5.html`, `9x16.html` | "CẨM PHẢ • QUẢNG NINH" | Được phép |
-|  | "TẠI CẨM PHẢ" (nhãn riêng) | Được phép (địa bàn xác nhận, tách rời tên brand) |
-|  | "KỸ THUẬT TẬN NƠI" | Được phép (mô tả dịch vụ) |
-|  | "CẦN SỬA ĐIỀU HÒA? THỢ ĐẤT MỎ." | Được phép (tên brand chuẩn diacritics) |
-|  | "ĐẦU MỐI KẾT NỐI THỢ TẬN NƠI" | Được phép (đúng định vị coordinator O3) |
-|  | "Kiểm tra sự cố tận nơi, xử lý đúng bệnh điều hòa..." | Được phép (mô tả công việc kỹ thuật) |
-|  | "SỬA CHỮA ĐIỀU HÒA TẬN NƠI" | Được phép (mô tả nghiệp vụ) |
-|  | "CẦN THỢ? GỌI THỢ ĐẤT MỎ" · "0888 942 247" | Được phép |
-| `concept_n3_1x1.html`, `4x5.html`, `9x16.html` | "CẨM PHẢ • QUẢNG NINH" | Được phép |
-|  | "BẢO DƯỠNG ĐỊNH KỲ • TIẾT KIỆM ĐIỆN" | Được phép (lợi ích kỹ thuật thông thường) |
-|  | "VỆ SINH ĐIỀU HÒA SẠCH. MÁY CHẠY ÊM, MÁT SÂU." | Được phép (headline kỹ thuật) |
-|  | "✓ Xịt rửa dàn lạnh, sạch bụi mốc / bẩn & thông máng nước" | Được phép (quy trình kỹ thuật cơ bản) |
-|  | "✓ Vệ sinh dàn nóng, thông thoáng quạt tản nhiệt" | Được phép (quy trình kỹ thuật cơ bản) |
-|  | "✓ Đo áp suất gas & kiểm tra dòng điện vận hành" | Được phép (quy trình kỹ thuật cơ bản) |
-|  | "THỢ KỸ THUẬT TẠI CẨM PHẢ" · "BẢO DƯỠNG ĐIỀU HÒA TẬN NƠI" | Được phép (O3 hợp lệ) |
-|  | "CẦN THỢ? GỌI THỢ ĐẤT MỎ" · "0888 942 247" | Được phép |
+| 1 | "Điều hòa không mát?" | Headline câu hỏi góc problem |
+| 2 | "Cần sửa điều hòa?" | Headline câu hỏi góc local |
+| 3 | "Gọi thợ" | CTA ngắn |
+| 4 | "Cần thợ? Gọi Thợ Đất Mỏ" | CTA line chính thức của thương hiệu |
+| 5 | "Việc kỹ thuật, có Thợ Đất Mỏ" | Promise line chính thức của thương hiệu |
+| 6 | "Thợ địa phương" | Từ khóa định vị cho phép theo O3 |
+| 7 | "Kỹ thuật tận nơi" | Mô tả phạm vi phục vụ |
+| 8 | "Đầu mối kết nối thợ tận nơi" | Đúng vai trò coordinator theo O3 |
+| 9 | "Sửa chữa điều hòa tận nơi" | Mô tả dịch vụ kỹ thuật |
+| 10 | "Tại Cẩm Phả" | Nhãn địa bàn độc lập |
+| 11 | `0888 942 247` | Hotline chính thức (nhóm 4-3-3) |
+| 12 | "THỢ ĐẤT MỎ" | Tên thương hiệu chuẩn dấu (theo Brand Guideline) |
 
-*Kết luận soát claim:* Không còn bất kỳ chuỗi chữ nào vi phạm O3 hoặc O4 hoặc cần Trung xác nhận. 100% nội dung đã được làm sạch.
+---
+
+### Bảng đối chiếu từng chuỗi hiển thị trên N1 v02 và N2 v02 với ALLOWED PHRASES
+
+#### 1. Concept N1 v02 (Cả 3 tỷ lệ 1:1, 4:5, 9:16)
+
+| Chuỗi chữ hiển thị trích xuất | Đối chiếu ALLOWED PHRASES | Trạng thái | Ghi chú |
+|---|---|---|---|
+| "ĐIỀU HÒA KHÔNG MÁT?" | Khớp mục 1 ("Điều hòa không mát?") | ĐƯỢC PHÉP | Headline |
+| "CẦN THỢ? GỌI THỢ ĐẤT MỎ" | Khớp mục 4 ("Cần thợ? Gọi Thợ Đất Mỏ") | ĐƯỢC PHÉP | CTA line |
+| "0888 942 247" | Khớp mục 11 (Hotline) | ĐƯỢC PHÉP | Hotline chính thức |
+| "THỢ ĐẤT MỎ" (trong logo & CTA) | Khớp mục 12 (Tên brand) | ĐƯỢC PHÉP | Tên thương hiệu |
+| "CẨM PHẢ • QUẢNG NINH" | Không có trong bảng (chỉ có "Tại Cẩm Phả") | **CẦN TRUNG DUYỆT #1** | Tag địa lý góc trên |
+| "SỰ CỐ ĐIỀU HÒA • GỌI THỢ XỬ LÝ" | Không có trong bảng | **CẦN TRUNG DUYỆT #2** | Tag phụ trên box vàng |
+| "GỌI THỢ ĐẤT MỎ." | Khác mục 3 ("Gọi thợ") và mục 4 | **CẦN TRUNG DUYỆT #3** | Dòng 2 tiêu đề chính N1 |
+| "Bật lâu không lạnh, phả hơi nóng" *(hoặc "Bật mãi...")* | Không có trong bảng | **CẦN TRUNG DUYỆT #4** | Mô tả triệu chứng sự cố |
+| "Chảy nước dàn lạnh, ướt tường nhà" *(hoặc "...ướt tường")* | Không có trong bảng | **CẦN TRUNG DUYỆT #5** | Mô tả triệu chứng sự cố |
+| "Cục nóng kêu to, rung lắc, tốn điện" | Không có trong bảng | **CẦN TRUNG DUYỆT #6** | Mô tả triệu chứng sự cố |
+| "Thợ kỹ thuật tại Cẩm Phả" | Không có trong bảng (khác mục 6 "Thợ địa phương") | **CẦN TRUNG DUYỆT #7** | Dòng thông tin phụ |
+| "Xử lý sự cố điều hòa tận nơi" *(hoặc "Xử lý điều hòa...")* | Không có trong bảng (khác mục 9) | **CẦN TRUNG DUYỆT #8** | Dòng thông tin phụ |
+| "● KỸ THUẬT" và "● TẬN NHÀ" *(trên bản 4:5)* | Không có trong bảng | **CẦN TRUNG DUYỆT #9** | Tag pill phụ bên phải |
+
+#### 2. Concept N2 v02 (Cả 3 tỷ lệ 1:1, 4:5, 9:16)
+
+| Chuỗi chữ hiển thị trích xuất | Đối chiếu ALLOWED PHRASES | Trạng thái | Ghi chú |
+|---|---|---|---|
+| "TẠI CẨM PHẢ" | Khớp mục 10 ("Tại Cẩm Phả") | ĐƯỢC PHÉP | Nhãn địa bàn riêng |
+| "KỸ THUẬT TẬN NƠI" | Khớp mục 7 ("Kỹ thuật tận nơi") | ĐƯỢC PHÉP | Mô tả phạm vi |
+| "CẦN SỬA ĐIỀU HÒA?" | Khớp mục 2 ("Cần sửa điều hòa?") | ĐƯỢC PHÉP | Dòng 1 tiêu đề |
+| "THỢ ĐẤT MỎ." | Khớp mục 12 ("THỢ ĐẤT MỎ") | ĐƯỢC PHÉP | Dòng 2 tiêu đề |
+| "ĐẦU MỐI KẾT NỐI THỢ TẬN NƠI" | Khớp mục 8 ("Đầu mối kết nối thợ tận nơi") | ĐƯỢC PHÉP | Định vị coordinator |
+| "SỬA CHỮA ĐIỀU HÒA TẬN NƠI" | Khớp mục 9 ("Sửa chữa điều hòa tận nơi") | ĐƯỢC PHÉP | Dòng phân cách vàng |
+| "CẦN THỢ? GỌI THỢ ĐẤT MỎ" | Khớp mục 4 ("Cần thợ? Gọi Thợ Đất Mỏ") | ĐƯỢC PHÉP | CTA line |
+| "0888 942 247" | Khớp mục 11 (Hotline) | ĐƯỢC PHÉP | Hotline chính thức |
+| "CẨM PHẢ • QUẢNG NINH" | Không có trong bảng (chỉ có "Tại Cẩm Phả") | **CẦN TRUNG DUYỆT #1** | Tag góc trên |
+| "Kiểm tra sự cố tận nơi, xử lý đúng bệnh điều hòa [tại địa bàn]." | Không có trong bảng | **CẦN TRUNG DUYỆT #10** | Dòng giải thích phương châm làm việc |
 
 ---
 
@@ -124,6 +152,11 @@ Claims status (use in finished copy only when CONFIRMED):
 - Q7 (T00) Does a vector logo source (.svg/.ai/.eps/.pdf) exist anywhere? If yes, send it before T01. → **ANSWERED: No vector source exists (2026-10-12)**
 - Q8 (T01) Missing variants: stacked layout and wordmark-only do not exist in the source sheet. Does Trung have these, or should they be commissioned? → **ANSWERED: defer (2026-10-12)**
 - Q9 Terms with the Điện lạnh technician(s): commission split, who collects payment, who handles warranty/complaints, response time, working hours, service area. Their answers decide which claims in §3 can become CONFIRMED.
+- Q10 (Review 3): Duyệt các chuỗi chữ ngoài ALLOWED PHRASES:
+  1. Cho phép thêm tag "CẨM PHẢ • QUẢNG NINH" vào ALLOWED PHRASES không?
+  2. Cho phép câu giải thích của N2: "Kiểm tra sự cố tận nơi, xử lý đúng bệnh điều hòa [tại địa bàn]." không?
+  3. Cho phép các mô tả triệu chứng hỏng hóc ở N1 ("Bật lâu không lạnh, phả hơi nóng", "Chảy nước dàn lạnh, ướt tường nhà", "Cục nóng kêu to, rung lắc, tốn điện") không?
+  4. Xác nhận thợ có nhận làm các hạng mục của N3 (xịt rửa dàn lạnh, vệ sinh dàn nóng, đo áp suất gas) không để mở lại N3?
 
 ---
 
@@ -132,7 +165,7 @@ Claims status (use in finished copy only when CONFIRMED):
 Logo files (located in T00):
 - L1: `ChatGPT Image Sep 16, 2026, 12_22_22 AM.png` (root) — PNG raster, ~1.16 MB, only file present, no vector source found.
 
-Status values: READY (usable as-is) / PREVIEW (placeholders or unconfirmed claims) / BLOCKED (needs input from Trung).
+Status values: READY (usable as-is) / PREVIEW (placeholders or unconfirmed claims / pending Trung approval) / BLOCKED (needs input from Trung).
 
 | Path | Status | QA (1 line) |
 |---|---|---|
@@ -180,26 +213,26 @@ Status values: READY (usable as-is) / PREVIEW (placeholders or unconfirmed claim
 | `reports/site-mobile-390px.png` | DONE | Mobile screenshot QA (390px full page) |
 | `reports/site-mobile-360px.png` | DONE | Mobile viewport QA (360px) |
 | `reports/site-mobile-430px.png` | DONE | Mobile viewport QA (430px) |
-| `exports/THO-DAT-MO_AD_N1_1x1_1080x1080_v01.png` | READY | Ad N1 (Problem angle) 1:1 v01 (giữ nguyên file gốc) |
-| `exports/THO-DAT-MO_AD_N1_4x5_1080x1350_v01.png` | READY | Ad N1 (Problem angle) 4:5 v01 (giữ nguyên file gốc) |
-| `exports/THO-DAT-MO_AD_N1_9x16_1080x1920_v01.png` | READY | Ad N1 (Problem angle) 9:16 v01 (giữ nguyên file gốc) |
-| `exports/THO-DAT-MO_AD_N2_1x1_1080x1080_v01.png` | READY | Ad N2 (Local angle) 1:1 v01 (giữ nguyên file gốc) |
-| `exports/THO-DAT-MO_AD_N2_4x5_1080x1350_v01.png` | READY | Ad N2 (Local angle) 4:5 v01 (giữ nguyên file gốc) |
-| `exports/THO-DAT-MO_AD_N2_9x16_1080x1920_v01.png` | READY | Ad N2 (Local angle) 9:16 v01 (giữ nguyên file gốc) |
-| `exports/THO-DAT-MO_AD_N3_1x1_1080x1080_v01.png` | READY | Ad N3 (Maintenance angle) 1:1 v01 (giữ nguyên file gốc) |
-| `exports/THO-DAT-MO_AD_N3_4x5_1080x1350_v01.png` | READY | Ad N3 (Maintenance angle) 4:5 v01 (giữ nguyên file gốc) |
-| `exports/THO-DAT-MO_AD_N3_9x16_1080x1920_v01.png` | READY | Ad N3 (Maintenance angle) 9:16 v01 (giữ nguyên file gốc) |
-| `exports/THO-DAT-MO_AD_N1_1x1_1080x1080_v02.png` | READY | Ad N1 1:1 v02: Dấu X sang #080808 (hết đỏ), line-height thoáng không dính dấu, font>=28px, QA 100% & 25% PASS |
-| `exports/THO-DAT-MO_AD_N1_4x5_1080x1350_v02.png` | READY | Ad N1 4:5 v02: Dấu X #080808, layout cân đối, hotline rõ, font>=28px, QA 100% & 25% PASS |
-| `exports/THO-DAT-MO_AD_N1_9x16_1080x1920_v02.png` | READY | Ad N1 9:16 v02: Logo y=280→352 (lề 70px); Tiêu đề y=499→669; Hotline y=1134→1210; Đáy CTA y=1230; dưới y=1230 trống; QA PASS |
-| `exports/THO-DAT-MO_AD_N2_1x1_1080x1080_v02.png` | READY | Ad N2 1:1 v02: Xóa danh sách phường & 2 nút chưa xác nhận; 'TẠI CẨM PHẢ' nhãn riêng; giữ ĐẦU MỐI KẾT NỐI; QA 100% & 25% PASS |
-| `exports/THO-DAT-MO_AD_N2_4x5_1080x1350_v02.png` | READY | Ad N2 4:5 v02: Layout thoáng, chữ trắng/vàng trên đen tương phản cao, không có chữ xám nhỏ, QA 100% & 25% PASS |
-| `exports/THO-DAT-MO_AD_N2_9x16_1080x1920_v02.png` | READY | Ad N2 9:16 v02: Logo y=280→352 (lề 70px); Tiêu đề y=528→708; Hotline y=1134→1210; Đáy CTA y=1230; dưới y=1230 trống; QA PASS |
-| `exports/THO-DAT-MO_AD_N3_1x1_1080x1080_v02.png` | READY | Ad N3 1:1 v02: Checklist bảo dưỡng sạch sẽ, tiêu đề line-height 1.25 dấu thoáng, font>=28px, QA 100% & 25% PASS |
-| `exports/THO-DAT-MO_AD_N3_4x5_1080x1350_v02.png` | READY | Ad N3 4:5 v02: Dấu tích #080808, không claim sai, hotline chuẩn 0888 942 247, QA 100% & 25% PASS |
-| `exports/THO-DAT-MO_AD_N3_9x16_1080x1920_v02.png` | READY | Ad N3 9:16 v02: Logo y=280→352 (lề 70px); Tiêu đề y=488→658; Hotline y=1134→1210; Đáy CTA y=1230; dưới y=1230 trống; QA PASS |
+| `exports/THO-DAT-MO_AD_N1_1x1_1080x1080_v01.png` | PREVIEW | Ad N1 1:1 v01 (giữ nguyên file gốc) |
+| `exports/THO-DAT-MO_AD_N1_4x5_1080x1350_v01.png` | PREVIEW | Ad N1 4:5 v01 (giữ nguyên file gốc) |
+| `exports/THO-DAT-MO_AD_N1_9x16_1080x1920_v01.png` | PREVIEW | Ad N1 9:16 v01 (giữ nguyên file gốc) |
+| `exports/THO-DAT-MO_AD_N2_1x1_1080x1080_v01.png` | PREVIEW | Ad N2 1:1 v01 (giữ nguyên file gốc) |
+| `exports/THO-DAT-MO_AD_N2_4x5_1080x1350_v01.png` | PREVIEW | Ad N2 4:5 v01 (giữ nguyên file gốc) |
+| `exports/THO-DAT-MO_AD_N2_9x16_1080x1920_v01.png` | PREVIEW | Ad N2 9:16 v01 (giữ nguyên file gốc) |
+| `exports/THO-DAT-MO_AD_N3_1x1_1080x1080_v01.png` | PREVIEW | Ad N3 1:1 v01 (chờ xác nhận thợ làm các hạng mục bảo dưỡng/gas) |
+| `exports/THO-DAT-MO_AD_N3_4x5_1080x1350_v01.png` | PREVIEW | Ad N3 4:5 v01 (chờ xác nhận thợ làm các hạng mục bảo dưỡng/gas) |
+| `exports/THO-DAT-MO_AD_N3_9x16_1080x1920_v01.png` | PREVIEW | Ad N3 9:16 v01 (chờ xác nhận thợ làm các hạng mục bảo dưỡng/gas) |
+| `exports/THO-DAT-MO_AD_N1_1x1_1080x1080_v02.png` | PREVIEW | Ad N1 1:1 v02: Dấu X sang #080808, line-height 1.25, font>=28px, chờ Trung duyệt chuỗi ngoài ALLOWED PHRASES |
+| `exports/THO-DAT-MO_AD_N1_4x5_1080x1350_v02.png` | PREVIEW | Ad N1 4:5 v02: Dấu X #080808, layout cân đối, font>=28px, chờ Trung duyệt chuỗi ngoài ALLOWED PHRASES |
+| `exports/THO-DAT-MO_AD_N1_9x16_1080x1920_v02.png` | PREVIEW | Ad N1 9:16 v02: Logo y=280→352 (lề 70px); Tiêu đề y=499→669; Hotline y=1134→1210; Đáy CTA y=1230; chờ duyệt chuỗi ngoài bảng |
+| `exports/THO-DAT-MO_AD_N2_1x1_1080x1080_v02.png` | PREVIEW | Ad N2 1:1 v02: 'TẠI CẨM PHẢ' nhãn riêng, giữ ĐẦU MỐI KẾT NỐI; chờ Trung duyệt 2 chuỗi ngoài ALLOWED PHRASES |
+| `exports/THO-DAT-MO_AD_N2_4x5_1080x1350_v02.png` | PREVIEW | Ad N2 4:5 v02: Tương phản cao, chữ trắng/vàng trên đen; chờ Trung duyệt 2 chuỗi ngoài ALLOWED PHRASES |
+| `exports/THO-DAT-MO_AD_N2_9x16_1080x1920_v02.png` | PREVIEW | Ad N2 9:16 v02: Logo y=280→352 (lề 70px); Tiêu đề y=528→708; Hotline y=1134→1210; Đáy CTA y=1230; chờ duyệt 2 chuỗi ngoài bảng |
+| `exports/THO-DAT-MO_AD_N3_1x1_1080x1080_v02.png` | PREVIEW | Ad N3 1:1 v02: Giữ PREVIEW, KHÔNG tạo v03 cho tới khi Trung xác nhận thợ làm các hạng mục bảo dưỡng |
+| `exports/THO-DAT-MO_AD_N3_4x5_1080x1350_v02.png` | PREVIEW | Ad N3 4:5 v02: Giữ PREVIEW, KHÔNG tạo v03 cho tới khi Trung xác nhận thợ làm các hạng mục bảo dưỡng |
+| `exports/THO-DAT-MO_AD_N3_9x16_1080x1920_v02.png` | PREVIEW | Ad N3 9:16 v02: Giữ PREVIEW, KHÔNG tạo v03 cho tới khi Trung xác nhận thợ làm các hạng mục bảo dưỡng |
 | `copy/ad-ready-text.md` | READY | 3 headlines + 3 primary texts for N1/N2/N3; N2 copy updated per independent review (bỏ 'khắp', 'có sẵn') |
-| `copy/ad-test-rules.md` | READY | Test ad rules updated: xóa CPM giả định & cỡ mẫu, thay CPL công thức, bổ sung đo nguồn lead vào ops/leads.csv |
+| `copy/ad-test-rules.md` | READY | Quy tắc test ad cập nhật: chỉ test N1/N2; kill #1 đủ 2 đk (>=150k VÀ >=3 ngày); scale tối đa 20% mỗi 2-3 ngày; câu mở + fb_unknown |
 
 ---
 
@@ -215,4 +248,5 @@ Status values: READY (usable as-is) / PREVIEW (placeholders or unconfirmed claim
 - 2026-10-12 · Claude · Reviewed the handoff. Fixed NEXT ACTION (rebrand existing page). Added Q9.
 - 2026-10-12 · Gemini Flash · T05e done. 3 no-photo ad concepts (N1, N2, N3) x 3 ratios = 9 PNGs READY (v01). copy/ad-ready-text.md and copy/ad-test-rules.md written.
 - 2026-10-12 · Gemini Flash · T05e polish per review: Sửa primary text N2 (bỏ 'khắp', 'có sẵn'). Đã view & QA độc lập 4 ảnh N2 4x5, N2 9x16, N3 4x5, N3 9x16 (safe zone, diacritics, hotline, contrast PASS). Sửa ad-test-rules.md (xóa giả định CPM, thay CPL công thức, bổ sung đo nguồn lead).
-- 2026-10-12 · Gemini Flash · T05e v02 hoàn tất: Sửa 9 template HTML nguồn, lập bảng soát claim O3/O4 (sạch 100%), bỏ màu đỏ (#080808), tăng line-height tiêu đề 1.25, chữ phụ >=28px. Xuất 9 file v02. Đo tọa độ y 9:16 chính xác (logo 280-352, tiêu đề 488-708, hotline 1134-1210, CTA đáy 1230, dưới 1230 trống hoàn toàn, lề 70px). Đã mở kiểm tra trực quan 100% & 25% cả 9 file, status READY.
+- 2026-10-12 · Gemini Flash · T05e v02 hoàn tất: Sửa 9 template HTML nguồn, bỏ màu đỏ (#080808), tăng line-height tiêu đề 1.25, chữ phụ >=28px. Xuất 9 file v02. Đo tọa độ y 9:16 chính xác (logo 280-352, tiêu đề 488-708, hotline 1134-1210, CTA đáy 1230, dưới 1230 trống hoàn toàn, lề 70px). Đã mở kiểm tra trực quan 100% & 25% cả 9 file.
+- 2026-10-12 · Gemini Flash · Review 3: Sửa AGENTS.md O4 (bổ sung phạm vi dịch vụ, kết quả, định kỳ, icon khiên). Thêm bảng ALLOWED PHRASES vào PROGRESS.md §3. Cập nhật ad-test-rules.md (chỉ test N1/N2, kill #1 hai điều kiện, scale 20% mỗi 2-3 ngày, câu mở + fb_unknown). Đổi status N1, N2, N3 về PREVIEW; trích xuất và đối chiếu chuỗi N1/N2 chờ Trung duyệt.

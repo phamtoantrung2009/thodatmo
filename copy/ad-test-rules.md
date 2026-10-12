@@ -1,11 +1,12 @@
 # QUY TẮC ĐÁNH GIÁ & VẬN HÀNH TEST ADS THỢ ĐẤT MỎ
 
-Tài liệu hướng dẫn thực tế cho Trung khi test 3 concept ads không ảnh (N1, N2, N3) cho dịch vụ Điện lạnh tại Cẩm Phả.
+Tài liệu hướng dẫn thực tế cho Trung khi test 2 concept ads không ảnh (N1, N2) cho dịch vụ Điện lạnh tại Cẩm Phả. *(Concept N3 tạm dừng chờ Trung xác nhận danh mục thợ làm).*
 
 ---
 
 ## 1. NGUYÊN TẮC TEST BAN ĐẦU
 - **Mục tiêu số 1:** Tìm ra creative mang về cuộc gọi/tin nhắn đầu tiên với chi phí thấp nhất. Tốc độ ra tiền thắng sự hoàn hảo.
+- **Chỉ test N1 và N2:** Chạy song song 2 concept N1 (sự cố) và N2 (thợ địa phương). N3 chờ xác nhận.
 - **Không vội tắt sớm:** Thuật toán quảng cáo cần thời gian máy học để phân phối đến đúng đối tượng có nhu cầu tại địa bàn Cẩm Phả.
 
 ---
@@ -17,30 +18,31 @@ Tài liệu hướng dẫn thực tế cho Trung khi test 3 concept ads không �
 - Không tắt hoặc chỉnh sửa ad trong vòng 24–48 giờ đầu tiên.
 
 ### B. Ngân sách chi tiêu tối thiểu trước khi kết luận
-- **Tối thiểu 100.000 VNĐ – 150.000 VNĐ** cho mỗi creative trước khi đánh giá.
+- **Tối thiểu 150.000 VNĐ** cho mỗi creative trước khi đánh giá.
 
 ### C. Khi nào TẮT quảng cáo (Kill Criteria)?
 Tắt creative ngay khi vi phạm một trong các điều kiện sau:
-1. **Không có phản hồi:** Đã chi đủ 150.000 VNĐ (hoặc chạy qua 3 ngày) mà đạt **0 cuộc gọi / 0 tin nhắn**.
-2. **Chi phí lead vượt ngưỡng trần:** Chi phí cho 1 cuộc gọi/tin nhắn (Cost Per Lead) vượt quá ngưỡng cho phép:  
+1. **Không có phản hồi (Kill #1):** Phải thỏa mãn **đồng thời cả hai điều kiện**: Đã chi **≥ 150.000 VNĐ** VÀ đã chạy **≥ 3 ngày** mà đạt **0 cuộc gọi / 0 tin nhắn**. *(Thiếu một trong hai điều kiện thì không tắt sớm).*
+2. **Chi phí lead vượt ngưỡng trần (Kill #2):** Chi phí cho 1 cuộc gọi/tin nhắn (Cost Per Lead) vượt quá ngưỡng cho phép:  
    `[CPL tối đa: chờ Trung xác nhận; công thức = lợi nhuận Trung trên 1 job × tỉ lệ chốt]`  
    *(Nếu chi phí cho 1 cuộc gọi cao hơn mức này thì chạy tiếp sẽ bị lỗ).*
 
 ### D. Khi nào GIỮ và TĂNG NGÂN SÁCH (Scale Criteria)?
 - Creative mang về cuộc gọi/tin nhắn với chi phí nằm dưới ngưỡng CPL tối đa và thợ nhận việc hoàn thành có lãi.
-- Tăng ngân sách từ từ (tối đa **20% – 30% mỗi ngày**), không nhân đôi ngân sách đột ngột tránh làm gãy phân phối của thuật toán.
+- **Tần suất & mức tăng:** Tăng ngân sách tối đa **~20% mỗi 2–3 ngày** (không tăng mỗi ngày), không nhân đôi ngân sách đột ngột tránh làm gãy phân phối của máy học.
 
 ---
 
 ## 3. ĐO NGUỒN CUỘC GỌI & GHI NHẬN `ops/leads.csv`
 
 Khi khách gọi tới số hotline `0888 942 247`:
-1. **Hỏi thăm nguồn:** Hỏi tự nhiên người gọi xem họ thấy quảng cáo nào (ví dụ: *"Bác thấy bài đăng máy không mát hay bài thợ tại Cẩm Phả ạ?"*).
+1. **Hỏi thăm nguồn bằng câu mở:** Hỏi tự nhiên: *"Anh/chị biết số bên em từ đâu ạ?"*
 2. **Ghi vào cột `source` của `ops/leads.csv`:**
    - Thấy quảng cáo sự cố máy không mát -> Ghi: `fb_ad_n1`
-   - Thấy quảng cáo thợ địa phương Cẩm Phả -> Ghi: `fb_ad_n2`
-   - Thấy quảng cáo bảo dưỡng vệ sinh -> Ghi: `fb_ad_n3`
-   - Khách vãng lai / người quen -> Ghi: `direct` hoặc `referral`
+   - Thấy quảng cáo thợ kỹ thuật Cẩm Phả -> Ghi: `fb_ad_n2`
+   - Nhớ là thấy trên Facebook nhưng không nhớ rõ bài nào -> Ghi: `fb_unknown`
+   - Khách vãng lai / người quen giới thiệu -> Ghi: `direct` hoặc `referral`
+   *(Lưu ý: `fb_ad_n3` tạm thời chưa dùng do N3 đang chờ xác nhận).*
 3. Điền đầy đủ các thông tin: ngày, dịch vụ, tên/SĐT khách, khu vực phường tại Cẩm Phả, hiện tượng hỏng.
 
 ---
