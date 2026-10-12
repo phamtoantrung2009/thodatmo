@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Ad OV1 — 1:1 (1080x1080) — THỢ ĐẤT MỎ (TỔNG HỢP DỊCH VỤ v01)</title>
+  <link rel="stylesheet" href="../../assets/fonts/fonts.css">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      width: 1080px;
+      height: 1080px;
+      background: #080808;
+      color: #FFFFFF;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 64px;
+    }
+    .grid-bg {
+      position: absolute; inset: 0;
+      background-image: 
+        linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size: 60px 60px; pointer-events: none;
+    }
+    .top-bar {
+      position: relative; z-index: 2;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .logo-container {
+      background: #FFFFFF; padding: 10px 22px; border-radius: 6px;
+      display: inline-flex; align-items: center;
+    }
+    .logo-container img { height: 52px; width: auto; display: block; }
+    .top-tag {
+      background: #FFD200; color: #080808;
+      font-family: 'Oswald', sans-serif; font-size: 26px; font-weight: 700;
+      letter-spacing: 1px; padding: 10px 24px; border-radius: 4px; text-transform: uppercase;
+    }
+
+    .hero-box {
+      position: relative; z-index: 2;
+      background: #FFD200; color: #080808;
+      border-radius: 12px; padding: 40px 48px; margin: 24px 0;
+    }
+    .main-title {
+      font-family: 'Oswald', sans-serif; font-size: 68px; font-weight: 700;
+      line-height: 1.25; text-transform: uppercase; letter-spacing: 0.5px;
+      margin-bottom: 28px; text-align: center;
+    }
+    
+    /* 6-box grid (2 columns x 3 rows) */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    .service-card {
+      background: #080808; color: #FFFFFF;
+      border-radius: 8px; padding: 16px 20px;
+      display: flex; align-items: center; gap: 18px;
+    }
+    .service-icon {
+      color: #FFD200; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .service-name {
+      font-family: 'Oswald', sans-serif;
+      font-size: 30px; font-weight: 700;
+      letter-spacing: 0.5px; text-transform: uppercase;
+      line-height: 1.2;
+    }
+
+    .bottom-cta {
+      position: relative; z-index: 2;
+      background: #080808; border: 3px solid #FFD200; border-radius: 8px;
+      padding: 22px 32px; display: flex; justify-content: space-between; align-items: center;
+    }
+    .cta-text {
+      font-family: 'Oswald', sans-serif; font-size: 36px; font-weight: 700;
+      letter-spacing: 0.5px; text-transform: uppercase; color: #FFFFFF;
+    }
+    .cta-text span { color: #FFD200; }
+    .hotline-btn {
+      background: #FFD200; color: #080808;
+      font-family: 'Oswald', sans-serif; font-size: 46px; font-weight: 700;
+      letter-spacing: 1px; padding: 12px 32px; border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-bg"></div>
+
+  <div class="top-bar">
+    <div class="logo-container">
+      <img src="../../assets/logo-derived/THO-DAT-MO_LOGO_HORIZONTAL_crop_v01.png" alt="THỢ ĐẤT MỎ">
+    </div>
+    <div class="top-tag">TẠI CẨM PHẢ</div>
+  </div>
+
+  <div class="hero-box">
+    <div class="main-title">VIỆC KỸ THUẬT, CÓ THỢ ĐẤT MỎ.</div>
+    <div class="services-grid">
+      <!-- 1. CAMERA -->
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="5" width="15" height="10" rx="2"></rect>
+            <path d="m17 9 5-3v12l-5-3"></path>
+            <circle cx="7" cy="10" r="2" fill="currentColor"></circle>
+          </svg>
+        </div>
+        <div class="service-name">CAMERA</div>
+      </div>
+      <!-- 2. MÁY TÍNH & PC -->
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+            <line x1="8" y1="21" x2="16" y2="21"></line>
+            <line x1="12" y1="17" x2="12" y2="21"></line>
+          </svg>
+        </div>
+        <div class="service-name">MÁY TÍNH & PC</div>
+      </div>
+      <!-- 3. WI-FI & MẠNG -->
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+            <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+            <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+          </svg>
+        </div>
+        <div class="service-name">WI-FI & MẠNG</div>
+      </div>
+      <!-- 4. ĐIỆN NƯỚC -->
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+          </svg>
+        </div>
+        <div class="service-name">ĐIỆN NƯỚC</div>
+      </div>
+      <!-- 5. ĐIỆN MẶT TRỜI -->
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+          </svg>
+        </div>
+        <div class="service-name">ĐIỆN MẶT TRỜI</div>
+      </div>
+      <!-- 6. ĐIỀU HÒA -->
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="10" rx="2"></rect>
+            <line x1="6" y1="18" x2="6" y2="21"></line>
+            <line x1="12" y1="18" x2="12" y2="21"></line>
+            <line x1="18" y1="18" x2="18" y2="21"></line>
+            <line x1="4" y1="10" x2="20" y2="10"></line>
+          </svg>
+        </div>
+        <div class="service-name">ĐIỀU HÒA</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-cta">
+    <div class="cta-text">
+      CẦN THỢ? <span>GỌI THỢ ĐẤT MỎ</span>
+    </div>
+    <div class="hotline-btn">
+      0888 942 247
+    </div>
+  </div>
+</body>
+</html>

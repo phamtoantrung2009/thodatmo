@@ -9,11 +9,11 @@ Keep §0 under 15 lines. Specs for each task are in `AGENTS.md` §7.
 
 - Last updated: 2026-10-12 · by: Gemini Flash
 - Last model: Gemini Flash
-- CURRENT TASK: T11 hoàn tất — Toàn bộ 5 dịch vụ (Camera, IT, Wi-Fi, Điện nước, Solar) đã có tài nguyên ads & copy READY
-- STATUS: READY (chỉ tạo file, Trung tự chạy ad và đăng bài)
-- NEXT ACTION: Trung nạp ngân sách chạy test ad Camera K1 (ngày 1–10, 15k/ngày) rồi IT M1 (ngày 11–20) theo copy/ad-test-rules.md; đăng bài nuôi page bằng copy/post-pack.md.
-- Files in progress: none
-- Do not redo: T00-T10, T11a-d (tất cả đã READY)
+- CURRENT TASK: T12a — Ảnh tổng hợp toàn bộ dịch vụ OV1 (3 ratios: 1:1, 4:5, 9:16)
+- STATUS: in progress
+- NEXT ACTION: Tạo src/ads/concept_ov1_1x1.html, 4x5.html, 9x16.html và xuất PNG OV1.
+- Files in progress: src/ads/concept_ov1_*.html
+- Do not redo: T00-T11
 - Blockers: Không có blocker.
 
 ---
