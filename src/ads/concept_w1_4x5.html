@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Ad W1 — 4:5 (1080x1350) — THỢ ĐẤT MỎ (WI-FI / MẠNG v01)</title>
+  <link rel="stylesheet" href="../../assets/fonts/fonts.css">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      width: 1080px;
+      height: 1350px;
+      background: #080808;
+      color: #FFFFFF;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 64px;
+    }
+    .grid-bg {
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size: 60px 60px; pointer-events: none;
+    }
+    .top-bar {
+      position: relative; z-index: 2;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .logo-container {
+      background: #FFFFFF; padding: 10px 22px; border-radius: 6px;
+      display: inline-flex; align-items: center;
+    }
+    .logo-container img { height: 52px; width: auto; display: block; }
+    .top-tag {
+      background: #FFD200; color: #080808;
+      font-family: 'Oswald', sans-serif; font-size: 26px; font-weight: 700;
+      letter-spacing: 1px; padding: 10px 24px; border-radius: 4px; text-transform: uppercase;
+    }
+    .hero-box {
+      position: relative; z-index: 2;
+      background: #FFD200; color: #080808;
+      border-radius: 12px; padding: 56px 52px;
+      margin: auto 0;
+    }
+    .hero-header {
+      display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 28px;
+    }
+    .tag-bubble {
+      display: inline-block; background: #080808; color: #FFD200;
+      font-family: 'Oswald', sans-serif; font-size: 28px; font-weight: 700;
+      letter-spacing: 1px; padding: 8px 20px; border-radius: 4px; text-transform: uppercase;
+    }
+    .wifi-icon { color: #080808; display: flex; align-items: center; }
+    .main-title {
+      font-family: 'Oswald', sans-serif; font-size: 92px; font-weight: 700;
+      line-height: 1.25; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 36px;
+    }
+    .feature-list { display: flex; flex-direction: column; gap: 18px; }
+    .feature-item {
+      display: flex; align-items: center; gap: 18px;
+      background: rgba(0,0,0,0.08); border-radius: 6px; padding: 18px 26px;
+      font-size: 34px; font-weight: 700; color: #080808;
+    }
+    .feature-dot { width: 14px; height: 14px; background: #080808; border-radius: 2px; flex-shrink: 0; }
+    .bottom-cta {
+      position: relative; z-index: 2;
+      background: #080808; border: 3px solid #FFD200; border-radius: 8px;
+      padding: 24px 32px; display: flex; justify-content: space-between; align-items: center;
+    }
+    .cta-text {
+      font-family: 'Oswald', sans-serif; font-size: 38px; font-weight: 700;
+      letter-spacing: 0.5px; text-transform: uppercase; color: #FFFFFF;
+    }
+    .cta-text span { color: #FFD200; }
+    .hotline-btn {
+      background: #FFD200; color: #080808;
+      font-family: 'Oswald', sans-serif; font-size: 48px; font-weight: 700;
+      letter-spacing: 1px; padding: 12px 32px; border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-bg"></div>
+
+  <div class="top-bar">
+    <div class="logo-container">
+      <img src="../../assets/logo-derived/THO-DAT-MO_LOGO_HORIZONTAL_crop_v01.png" alt="THỢ ĐẤT MỎ">
+    </div>
+    <div class="top-tag">TẠI CẨM PHẢ</div>
+  </div>
+
+  <div class="hero-box">
+    <div class="hero-header">
+      <div class="tag-bubble">WI-FI & MẠNG TẬN NƠI</div>
+      <div class="wifi-icon">
+        <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+          <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+          <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+          <line x1="12" y1="20" x2="12.01" y2="20" stroke-width="3"></line>
+        </svg>
+      </div>
+    </div>
+    <div class="main-title">
+      <div>WI-FI YẾU? MẤT SÓNG?</div>
+      <div>THỢ ĐẤT MỎ NHẬN.</div>
+    </div>
+    <div class="feature-list">
+      <div class="feature-item">
+        <div class="feature-dot"></div>
+        <div>LẮP ĐẶT WI-FI, MẠNG TẬN NƠI</div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-dot"></div>
+        <div>VIỆC KỸ THUẬT, CÓ THỢ ĐẤT MỎ</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-cta">
+    <div class="cta-text">
+      CẦN THỢ? <span>GỌI THỢ ĐẤT MỎ</span>
+    </div>
+    <div class="hotline-btn">0888 942 247</div>
+  </div>
+</body>
+</html>
