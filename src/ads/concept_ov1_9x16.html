@@ -33,6 +33,10 @@
       flex-direction: column;
       justify-content: space-between;
     }
+    .hero-box-wrap {
+      display: flex;
+      flex-direction: column;
+    }
     .top-bar {
       display: flex; justify-content: space-between; align-items: center;
     }
@@ -49,22 +53,22 @@
 
     .hero-box {
       background: #FFD200; color: #080808;
-      border-radius: 12px; padding: 36px 36px;
+      border-radius: 12px; padding: 40px 40px 36px;
     }
     .main-title {
-      font-family: 'Oswald', sans-serif; font-size: 64px; font-weight: 700;
-      line-height: 1.25; text-transform: uppercase; letter-spacing: 0.5px;
-      margin-bottom: 24px; text-align: center;
+      font-family: 'Oswald', sans-serif; font-size: 72px; font-weight: 700;
+      line-height: 1.2; text-transform: uppercase; letter-spacing: 0.5px;
+      margin-bottom: 28px; text-align: left;
     }
     
     .services-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
+      gap: 16px;
     }
     .service-card {
       background: #080808; color: #FFFFFF;
-      border-radius: 8px; padding: 16px 18px;
+      border-radius: 8px; padding: 18px 20px;
       display: flex; align-items: center; gap: 16px;
     }
     .service-icon {
@@ -73,14 +77,21 @@
     }
     .service-name {
       font-family: 'Oswald', sans-serif;
-      font-size: 28px; font-weight: 700;
+      font-size: 30px; font-weight: 700;
       letter-spacing: 0.5px; text-transform: uppercase;
       line-height: 1.2;
+    }
+    .hero-sub {
+      font-family: 'Be Vietnam Pro', sans-serif;
+      font-size: 28px; font-weight: 700; color: #080808;
+      text-transform: uppercase; letter-spacing: 1px;
+      margin-top: 24px; text-align: center;
+      border-top: 2px solid #080808; padding-top: 18px;
     }
 
     .bottom-cta {
       background: #080808; border: 3px solid #FFD200; border-radius: 8px;
-      padding: 22px 32px; display: flex; justify-content: space-between; align-items: center;
+      padding: 28px 36px; display: flex; justify-content: space-between; align-items: center;
     }
     .cta-text {
       font-family: 'Oswald', sans-serif; font-size: 36px; font-weight: 700;
@@ -105,6 +116,7 @@
       <div class="top-tag">TẠI CẨM PHẢ</div>
     </div>
 
+    <div class="hero-box-wrap">
     <div class="hero-box">
       <div class="main-title">VIỆC KỸ THUẬT, CÓ THỢ ĐẤT MỎ.</div>
       <div class="services-grid">
@@ -177,6 +189,8 @@
           <div class="service-name">ĐIỀU HÒA</div>
         </div>
       </div>
+      <div class="hero-sub">KỸ THUẬT TẬN NƠI · CẨM PHẢ</div>
+    </div>
     </div>
 
     <div class="bottom-cta">
